@@ -1,0 +1,317 @@
+2022-10-17 18:20:29.834 [main] "  " DEBUG org.springframework.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2022-10-17 18:20:29.860 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-10-17 18:20:29.860 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+2022-10-17 18:20:30.788 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-17 18:20:30.845 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2022-10-17 18:20:30.858 [main] "  " DEBUG o.s.web.servlet.handler.BeanNameUrlHandlerMapping - Detected 1 mappings in 'beanNameHandlerMapping'
+2022-10-17 18:20:30.878 [main] "  " DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-17 18:20:30.890 [main] "  " DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-17 18:21:08.788 [http-nio-10001-exec-1] "  " DEBUG org.springframework.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2022-10-17 18:21:08.807 [http-nio-10001-exec-1] "  " DEBUG org.springframework.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-10-17 18:21:08.826 [http-nio-10001-exec-1] "  " DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/robot", parameters={}
+2022-10-17 18:21:08.832 [http-nio-10001-exec-1] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.lincoco.xiaokarobot.RobotApi#execute()
+2022-10-17 18:21:09.543 [http-nio-10001-exec-1] "  " DEBUG c.l.xiaokarobot.dao.UserIdentityDAO.selectList - ==>  Preparing: SELECT id,password,phone_number,mailbox,school,create_time,update_time,delete_time FROM user_identity WHERE delete_time IS NULL
+2022-10-17 18:21:09.599 [http-nio-10001-exec-1] "  " DEBUG c.l.xiaokarobot.dao.UserIdentityDAO.selectList - ==> Parameters: 
+2022-10-17 18:21:09.662 [http-nio-10001-exec-1] "  " DEBUG c.l.xiaokarobot.dao.UserIdentityDAO.selectList - <==      Total: 3
+2022-10-17 18:23:13.864 [http-nio-10001-exec-1] "  " DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-10-17 18:23:13.865 [http-nio-10001-exec-1] "  " DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Nothing to write: null body
+2022-10-17 18:23:13.868 [http-nio-10001-exec-1] "  " DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2022-10-17 18:26:43.739 [main] "  " DEBUG org.springframework.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2022-10-17 18:26:43.801 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-10-17 18:26:43.802 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+2022-10-17 18:26:45.776 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-17 18:26:45.846 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2022-10-17 18:26:45.866 [main] "  " DEBUG o.s.web.servlet.handler.BeanNameUrlHandlerMapping - Detected 1 mappings in 'beanNameHandlerMapping'
+2022-10-17 18:26:45.887 [main] "  " DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-17 18:26:45.915 [main] "  " DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-17 18:26:56.347 [http-nio-10001-exec-1] "  " DEBUG org.springframework.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2022-10-17 18:26:56.356 [http-nio-10001-exec-1] "  " DEBUG org.springframework.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-10-17 18:26:56.368 [http-nio-10001-exec-1] "  " DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/robot", parameters={}
+2022-10-17 18:26:56.371 [http-nio-10001-exec-1] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.lincoco.xiaokarobot.RobotApi#execute()
+2022-10-17 18:26:56.959 [http-nio-10001-exec-1] "  " DEBUG c.l.xiaokarobot.dao.UserIdentityDAO.selectList - ==>  Preparing: SELECT id,password,phone_number,mailbox,school,create_time,update_time,delete_time FROM user_identity WHERE delete_time IS NULL
+2022-10-17 18:26:56.996 [http-nio-10001-exec-1] "  " DEBUG c.l.xiaokarobot.dao.UserIdentityDAO.selectList - ==> Parameters: 
+2022-10-17 18:26:57.047 [http-nio-10001-exec-1] "  " DEBUG c.l.xiaokarobot.dao.UserIdentityDAO.selectList - <==      Total: 3
+2022-10-17 18:28:51.182 [http-nio-10001-exec-1] "  " DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-10-17 18:28:51.186 [http-nio-10001-exec-1] "  " DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Nothing to write: null body
+2022-10-17 18:28:51.191 [http-nio-10001-exec-1] "  " DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2022-10-17 20:13:02.676 [main] "  " DEBUG org.springframework.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2022-10-17 20:13:02.717 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-10-17 20:13:02.718 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+2022-10-17 20:13:03.873 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-17 20:13:03.938 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2022-10-17 20:13:03.959 [main] "  " DEBUG o.s.web.servlet.handler.BeanNameUrlHandlerMapping - Detected 1 mappings in 'beanNameHandlerMapping'
+2022-10-17 20:13:03.976 [main] "  " DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-17 20:13:03.988 [main] "  " DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-17 20:13:04.251 [main] "  " DEBUG o.s.w.servlet.view.freemarker.FreeMarkerConfigurer - Cannot resolve template loader path [classpath:/templates/] to [java.io.File]: using SpringTemplateLoader as fallback
+java.io.FileNotFoundException: class path resource [templates/] cannot be resolved to URL because it does not exist
+	at org.springframework.core.io.ClassPathResource.getURL(ClassPathResource.java:195)
+	at org.springframework.core.io.AbstractFileResolvingResource.getFile(AbstractFileResolvingResource.java:150)
+	at org.springframework.ui.freemarker.FreeMarkerConfigurationFactory.getTemplateLoaderForPath(FreeMarkerConfigurationFactory.java:345)
+	at org.springframework.ui.freemarker.FreeMarkerConfigurationFactory.createConfiguration(FreeMarkerConfigurationFactory.java:297)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer.afterPropertiesSet(FreeMarkerConfigurer.java:120)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.lincoco.xiaokarobot.LinXiaokaRobotApplication.main(LinXiaokaRobotApplication.java:17)
+2022-10-17 20:14:43.019 [main] "  " DEBUG org.springframework.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2022-10-17 20:14:43.047 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-10-17 20:14:43.048 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+2022-10-17 20:14:43.979 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-17 20:14:44.058 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2022-10-17 20:14:44.079 [main] "  " DEBUG o.s.web.servlet.handler.BeanNameUrlHandlerMapping - Detected 1 mappings in 'beanNameHandlerMapping'
+2022-10-17 20:14:44.099 [main] "  " DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-17 20:14:44.116 [main] "  " DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-17 20:17:14.822 [http-nio-10001-exec-1] "  " DEBUG org.springframework.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2022-10-17 20:17:14.840 [http-nio-10001-exec-1] "  " DEBUG org.springframework.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-10-17 20:17:14.858 [http-nio-10001-exec-1] "  " DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/robot", parameters={}
+2022-10-17 20:17:14.865 [http-nio-10001-exec-1] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.lincoco.xiaokarobot.RobotApi#execute()
+2022-10-17 20:17:15.611 [http-nio-10001-exec-1] "  " DEBUG c.l.xiaokarobot.dao.UserIdentityDAO.selectList - ==>  Preparing: SELECT id,password,phone_number,mailbox,school,create_time,update_time,delete_time FROM user_identity WHERE delete_time IS NULL
+2022-10-17 20:17:15.651 [http-nio-10001-exec-1] "  " DEBUG c.l.xiaokarobot.dao.UserIdentityDAO.selectList - ==> Parameters: 
+2022-10-17 20:17:15.712 [http-nio-10001-exec-1] "  " DEBUG c.l.xiaokarobot.dao.UserIdentityDAO.selectList - <==      Total: 3
+2022-10-17 20:18:53.786 [http-nio-10001-exec-1] "  " DEBUG c.l.xiaokarobot.dao.UserIdentityDAO.selectById - ==>  Preparing: SELECT id,password,phone_number,mailbox,school,create_time,update_time,delete_time FROM user_identity WHERE id=? AND delete_time IS NULL
+2022-10-17 20:18:53.792 [http-nio-10001-exec-1] "  " DEBUG c.l.xiaokarobot.dao.UserIdentityDAO.selectById - ==> Parameters: 2012011085(String)
+2022-10-17 20:18:53.812 [http-nio-10001-exec-1] "  " DEBUG c.l.xiaokarobot.dao.UserIdentityDAO.selectById - <==      Total: 1
+2022-10-17 20:18:56.540 [http-nio-10001-exec-1] "  " DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-10-17 20:18:56.541 [http-nio-10001-exec-1] "  " DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Nothing to write: null body
+2022-10-17 20:18:56.542 [http-nio-10001-exec-1] "  " DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2022-10-17 20:20:10.229 [http-nio-10001-exec-4] "  " DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/robot", parameters={}
+2022-10-17 20:20:10.232 [http-nio-10001-exec-4] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.lincoco.xiaokarobot.RobotApi#execute()
+2022-10-17 20:20:10.252 [http-nio-10001-exec-4] "  " DEBUG c.l.xiaokarobot.dao.UserIdentityDAO.selectList - ==>  Preparing: SELECT id,password,phone_number,mailbox,school,create_time,update_time,delete_time FROM user_identity WHERE delete_time IS NULL
+2022-10-17 20:20:10.252 [http-nio-10001-exec-4] "  " DEBUG c.l.xiaokarobot.dao.UserIdentityDAO.selectList - ==> Parameters: 
+2022-10-17 20:20:10.269 [http-nio-10001-exec-4] "  " DEBUG c.l.xiaokarobot.dao.UserIdentityDAO.selectList - <==      Total: 3
+2022-10-17 20:21:43.539 [http-nio-10001-exec-4] "  " DEBUG c.l.xiaokarobot.dao.UserIdentityDAO.selectById - ==>  Preparing: SELECT id,password,phone_number,mailbox,school,create_time,update_time,delete_time FROM user_identity WHERE id=? AND delete_time IS NULL
+2022-10-17 20:21:43.542 [http-nio-10001-exec-4] "  " DEBUG c.l.xiaokarobot.dao.UserIdentityDAO.selectById - ==> Parameters: 2012011085(String)
+2022-10-17 20:21:43.576 [http-nio-10001-exec-4] "  " DEBUG c.l.xiaokarobot.dao.UserIdentityDAO.selectById - <==      Total: 1
+2022-10-17 20:21:44.750 [http-nio-10001-exec-4] "  " DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-10-17 20:21:44.751 [http-nio-10001-exec-4] "  " DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Nothing to write: null body
+2022-10-17 20:21:44.753 [http-nio-10001-exec-4] "  " DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2022-10-17 20:25:02.015 [main] "  " DEBUG org.springframework.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2022-10-17 20:25:02.042 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-10-17 20:25:02.043 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+2022-10-17 20:25:02.959 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-17 20:25:03.017 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2022-10-17 20:25:03.039 [main] "  " DEBUG o.s.web.servlet.handler.BeanNameUrlHandlerMapping - Detected 1 mappings in 'beanNameHandlerMapping'
+2022-10-17 20:25:03.060 [main] "  " DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-17 20:25:03.075 [main] "  " DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-17 20:35:03.470 [main] "  " DEBUG org.springframework.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2022-10-17 20:35:03.499 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-10-17 20:35:03.499 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+2022-10-17 20:35:04.478 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-17 20:35:04.536 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2022-10-17 20:35:04.556 [main] "  " DEBUG o.s.web.servlet.handler.BeanNameUrlHandlerMapping - Detected 1 mappings in 'beanNameHandlerMapping'
+2022-10-17 20:35:04.577 [main] "  " DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-17 20:35:04.591 [main] "  " DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-17 20:37:26.422 [main] "  " DEBUG org.springframework.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2022-10-17 20:37:26.467 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-10-17 20:37:26.468 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+2022-10-17 20:37:27.619 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-17 20:37:27.708 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2022-10-17 20:37:27.723 [main] "  " DEBUG o.s.web.servlet.handler.BeanNameUrlHandlerMapping - Detected 1 mappings in 'beanNameHandlerMapping'
+2022-10-17 20:37:27.747 [main] "  " DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-17 20:37:27.763 [main] "  " DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-17 20:41:58.522 [main] "  " DEBUG org.springframework.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2022-10-17 20:41:58.605 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-10-17 20:41:58.605 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+2022-10-17 20:42:00.511 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-17 20:42:00.644 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2022-10-17 20:42:00.667 [main] "  " DEBUG o.s.web.servlet.handler.BeanNameUrlHandlerMapping - Detected 1 mappings in 'beanNameHandlerMapping'
+2022-10-17 20:42:00.712 [main] "  " DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-17 20:42:00.730 [main] "  " DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-17 20:45:37.408 [main] "  " DEBUG org.springframework.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2022-10-17 20:45:37.467 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-10-17 20:45:37.467 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+2022-10-17 20:45:38.937 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-17 20:45:39.043 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2022-10-17 20:45:39.060 [main] "  " DEBUG o.s.web.servlet.handler.BeanNameUrlHandlerMapping - Detected 1 mappings in 'beanNameHandlerMapping'
+2022-10-17 20:45:39.085 [main] "  " DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-17 20:45:39.106 [main] "  " DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-17 20:47:33.767 [main] "  " DEBUG org.springframework.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2022-10-17 20:47:33.794 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-10-17 20:47:33.794 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+2022-10-17 20:47:34.809 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-17 20:47:34.867 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2022-10-17 20:47:34.882 [main] "  " DEBUG o.s.web.servlet.handler.BeanNameUrlHandlerMapping - Detected 1 mappings in 'beanNameHandlerMapping'
+2022-10-17 20:47:34.897 [main] "  " DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-17 20:47:34.908 [main] "  " DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-17 20:48:45.936 [main] "  " DEBUG org.springframework.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2022-10-17 20:48:45.973 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-10-17 20:48:45.973 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+2022-10-17 20:48:47.015 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-17 20:48:47.081 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2022-10-17 20:48:47.096 [main] "  " DEBUG o.s.web.servlet.handler.BeanNameUrlHandlerMapping - Detected 1 mappings in 'beanNameHandlerMapping'
+2022-10-17 20:48:47.113 [main] "  " DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-17 20:48:47.127 [main] "  " DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-17 20:57:43.084 [main] "  " DEBUG org.springframework.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2022-10-17 20:57:43.135 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-10-17 20:57:43.136 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+2022-10-17 20:57:45.520 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-17 20:57:45.662 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2022-10-17 20:57:45.685 [main] "  " DEBUG o.s.web.servlet.handler.BeanNameUrlHandlerMapping - Detected 1 mappings in 'beanNameHandlerMapping'
+2022-10-17 20:57:45.728 [main] "  " DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-17 20:57:45.760 [main] "  " DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-17 21:04:13.804 [main] "  " DEBUG org.springframework.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2022-10-17 21:04:13.853 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-10-17 21:04:13.853 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+2022-10-17 21:04:15.601 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-17 21:04:15.719 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2022-10-17 21:04:15.739 [main] "  " DEBUG o.s.web.servlet.handler.BeanNameUrlHandlerMapping - Detected 1 mappings in 'beanNameHandlerMapping'
+2022-10-17 21:04:15.772 [main] "  " DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-17 21:04:15.795 [main] "  " DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-17 21:08:13.394 [main] "  " DEBUG org.springframework.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2022-10-17 21:08:13.427 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-10-17 21:08:13.427 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+2022-10-17 21:08:14.435 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-17 21:08:14.491 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2022-10-17 21:08:14.506 [main] "  " DEBUG o.s.web.servlet.handler.BeanNameUrlHandlerMapping - Detected 1 mappings in 'beanNameHandlerMapping'
+2022-10-17 21:08:14.522 [main] "  " DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-17 21:08:14.533 [main] "  " DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-17 21:09:12.099 [main] "  " DEBUG org.springframework.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2022-10-17 21:09:12.125 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-10-17 21:09:12.126 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+2022-10-17 21:09:12.979 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-17 21:09:13.037 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2022-10-17 21:09:13.053 [main] "  " DEBUG o.s.web.servlet.handler.BeanNameUrlHandlerMapping - Detected 1 mappings in 'beanNameHandlerMapping'
+2022-10-17 21:09:13.072 [main] "  " DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-17 21:09:13.085 [main] "  " DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-17 21:36:41.676 [main] "  " DEBUG org.springframework.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2022-10-17 21:36:41.742 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-10-17 21:36:41.743 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+2022-10-17 21:36:43.540 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-17 21:36:43.651 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2022-10-17 21:36:43.678 [main] "  " DEBUG o.s.web.servlet.handler.BeanNameUrlHandlerMapping - Detected 1 mappings in 'beanNameHandlerMapping'
+2022-10-17 21:36:43.717 [main] "  " DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-17 21:36:43.747 [main] "  " DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-17 21:40:32.553 [main] "  " DEBUG org.springframework.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2022-10-17 21:40:32.600 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-10-17 21:40:32.602 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+2022-10-17 21:40:33.636 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-17 21:40:33.700 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2022-10-17 21:40:33.717 [main] "  " DEBUG o.s.web.servlet.handler.BeanNameUrlHandlerMapping - Detected 1 mappings in 'beanNameHandlerMapping'
+2022-10-17 21:40:33.732 [main] "  " DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-17 21:40:33.745 [main] "  " DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-17 21:43:29.315 [main] "  " DEBUG org.springframework.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2022-10-17 21:43:29.345 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-10-17 21:43:29.345 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+2022-10-17 21:43:30.994 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-17 21:43:31.114 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2022-10-17 21:43:31.143 [main] "  " DEBUG o.s.web.servlet.handler.BeanNameUrlHandlerMapping - Detected 1 mappings in 'beanNameHandlerMapping'
+2022-10-17 21:43:31.179 [main] "  " DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-17 21:43:31.198 [main] "  " DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-17 21:57:45.156 [main] "  " DEBUG org.springframework.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2022-10-17 21:57:45.211 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-10-17 21:57:45.212 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+2022-10-17 21:57:47.062 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-17 21:57:47.180 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2022-10-17 21:57:47.209 [main] "  " DEBUG o.s.web.servlet.handler.BeanNameUrlHandlerMapping - Detected 1 mappings in 'beanNameHandlerMapping'
+2022-10-17 21:57:47.357 [main] "  " DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-17 21:57:47.541 [main] "  " DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-17 21:59:43.156 [main] "  " DEBUG org.springframework.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2022-10-17 21:59:43.187 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-10-17 21:59:43.187 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+2022-10-17 22:00:37.965 [main] "  " DEBUG org.springframework.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2022-10-17 22:00:37.997 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-10-17 22:00:37.998 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+2022-10-17 22:01:18.605 [main] "  " DEBUG org.springframework.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2022-10-17 22:01:18.628 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-10-17 22:01:18.629 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+2022-10-17 22:01:19.595 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-17 22:01:19.653 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2022-10-17 22:01:19.669 [main] "  " DEBUG o.s.web.servlet.handler.BeanNameUrlHandlerMapping - Detected 1 mappings in 'beanNameHandlerMapping'
+2022-10-17 22:01:19.684 [main] "  " DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-17 22:01:19.695 [main] "  " DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-17 22:03:57.405 [main] "  " DEBUG org.springframework.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2022-10-17 22:03:57.430 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-10-17 22:03:57.430 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+2022-10-17 22:03:58.351 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-17 22:03:58.408 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2022-10-17 22:03:58.426 [main] "  " DEBUG o.s.web.servlet.handler.BeanNameUrlHandlerMapping - Detected 1 mappings in 'beanNameHandlerMapping'
+2022-10-17 22:03:58.442 [main] "  " DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-17 22:03:58.454 [main] "  " DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-17 22:10:36.062 [main] "  " DEBUG org.springframework.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2022-10-17 22:10:36.085 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-10-17 22:10:36.085 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+2022-10-17 22:10:37.113 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-17 22:10:37.167 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2022-10-17 22:10:37.184 [main] "  " DEBUG o.s.web.servlet.handler.BeanNameUrlHandlerMapping - Detected 1 mappings in 'beanNameHandlerMapping'
+2022-10-17 22:10:37.212 [main] "  " DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-17 22:10:37.235 [main] "  " DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-17 22:13:08.168 [main] "  " DEBUG org.springframework.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2022-10-17 22:13:08.191 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-10-17 22:13:08.192 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+2022-10-17 22:13:09.077 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-17 22:13:09.132 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2022-10-17 22:13:09.149 [main] "  " DEBUG o.s.web.servlet.handler.BeanNameUrlHandlerMapping - Detected 1 mappings in 'beanNameHandlerMapping'
+2022-10-17 22:13:09.166 [main] "  " DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-17 22:13:09.183 [main] "  " DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-17 22:20:00.992 [main] "  " DEBUG org.springframework.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2022-10-17 22:20:01.014 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-10-17 22:20:01.014 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+2022-10-17 22:20:01.869 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-17 22:20:01.925 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2022-10-17 22:20:01.938 [main] "  " DEBUG o.s.web.servlet.handler.BeanNameUrlHandlerMapping - Detected 1 mappings in 'beanNameHandlerMapping'
+2022-10-17 22:20:01.953 [main] "  " DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-17 22:20:01.963 [main] "  " DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-17 22:34:10.087 [main] "  " DEBUG org.springframework.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2022-10-17 22:34:10.111 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-10-17 22:34:10.112 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+2022-10-17 22:34:11.419 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-17 22:34:11.516 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2022-10-17 22:34:11.536 [main] "  " DEBUG o.s.web.servlet.handler.BeanNameUrlHandlerMapping - Detected 1 mappings in 'beanNameHandlerMapping'
+2022-10-17 22:34:11.556 [main] "  " DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-17 22:34:11.572 [main] "  " DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-17 22:35:00.681 [pool-1-thread-1] "  " DEBUG c.l.xiaokarobot.dao.UserIdentityDAO.selectList - ==>  Preparing: SELECT id,password,phone_number,mailbox,school,create_time,update_time,delete_time FROM user_identity WHERE delete_time IS NULL
+2022-10-17 22:35:00.721 [pool-1-thread-1] "  " DEBUG c.l.xiaokarobot.dao.UserIdentityDAO.selectList - ==> Parameters: 
+2022-10-17 22:35:00.781 [pool-1-thread-1] "  " DEBUG c.l.xiaokarobot.dao.UserIdentityDAO.selectList - <==      Total: 3
+2022-10-17 22:44:49.771 [main] "  " DEBUG org.springframework.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2022-10-17 22:44:49.804 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-10-17 22:44:49.805 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+2022-10-17 22:44:50.972 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-17 22:44:51.060 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2022-10-17 22:44:51.082 [main] "  " DEBUG o.s.web.servlet.handler.BeanNameUrlHandlerMapping - Detected 1 mappings in 'beanNameHandlerMapping'
+2022-10-17 22:44:51.108 [main] "  " DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-17 22:44:51.125 [main] "  " DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-17 22:45:00.687 [pool-1-thread-1] "  " DEBUG c.l.xiaokarobot.dao.UserIdentityDAO.selectList - ==>  Preparing: SELECT id,password,phone_number,mailbox,school,create_time,update_time,delete_time FROM user_identity WHERE delete_time IS NULL
+2022-10-17 22:45:00.730 [pool-1-thread-1] "  " DEBUG c.l.xiaokarobot.dao.UserIdentityDAO.selectList - ==> Parameters: 
+2022-10-17 22:45:00.793 [pool-1-thread-1] "  " DEBUG c.l.xiaokarobot.dao.UserIdentityDAO.selectList - <==      Total: 3
+2022-10-17 22:59:57.730 [main] "  " DEBUG org.springframework.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2022-10-17 22:59:57.778 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-10-17 22:59:57.778 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+2022-10-17 22:59:59.207 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-17 22:59:59.345 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2022-10-17 22:59:59.414 [main] "  " DEBUG o.s.web.servlet.handler.BeanNameUrlHandlerMapping - Detected 1 mappings in 'beanNameHandlerMapping'
+2022-10-17 22:59:59.490 [main] "  " DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-17 22:59:59.509 [main] "  " DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-17 23:00:01.195 [pool-1-thread-1] "  " DEBUG c.l.xiaokarobot.dao.UserIdentityDAO.selectList - ==>  Preparing: SELECT id,password,phone_number,mailbox,school,create_time,update_time,delete_time FROM user_identity WHERE delete_time IS NULL
+2022-10-17 23:00:01.225 [pool-1-thread-1] "  " DEBUG c.l.xiaokarobot.dao.UserIdentityDAO.selectList - ==> Parameters: 
+2022-10-17 23:00:01.333 [pool-1-thread-1] "  " DEBUG c.l.xiaokarobot.dao.UserIdentityDAO.selectList - <==      Total: 3
+2022-10-17 23:07:30.804 [main] "  " DEBUG org.springframework.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2022-10-17 23:07:30.870 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-10-17 23:07:30.871 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+2022-10-17 23:07:31.998 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-17 23:07:32.080 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2022-10-17 23:07:32.095 [main] "  " DEBUG o.s.web.servlet.handler.BeanNameUrlHandlerMapping - Detected 1 mappings in 'beanNameHandlerMapping'
+2022-10-17 23:07:32.114 [main] "  " DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-17 23:07:32.130 [main] "  " DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-17 23:09:14.303 [main] "  " DEBUG org.springframework.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2022-10-17 23:09:14.331 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-10-17 23:09:14.331 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+2022-10-17 23:09:15.317 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-17 23:09:15.374 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2022-10-17 23:09:15.387 [main] "  " DEBUG o.s.web.servlet.handler.BeanNameUrlHandlerMapping - Detected 1 mappings in 'beanNameHandlerMapping'
+2022-10-17 23:09:15.402 [main] "  " DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-17 23:09:15.417 [main] "  " DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice

@@ -1,8 +1,7 @@
 package com.lincoco.xiaokarobot.config;
 
-import com.lincoco.xiaokarobot.common.RobotTask;
+import com.lincoco.xiaokarobot.taskhandler.RobotTask;
 import com.lincoco.xiaokarobot.service.DriverService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

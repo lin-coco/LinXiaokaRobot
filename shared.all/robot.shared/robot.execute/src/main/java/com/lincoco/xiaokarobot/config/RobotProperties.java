@@ -3,10 +3,12 @@ package com.lincoco.xiaokarobot.config;
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.PropertySource;
+import org.springframework.core.env.MapPropertySource;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalTime;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author ：xys
@@ -15,7 +17,7 @@ import java.util.List;
  */
 @Component
 @Data
-@PropertySource(value = "file:/Users/apple/Desktop/2022-8研发开始/lin-xiaoka-robot/robotConfig.properties",encoding = "UTF-8")
+@PropertySource(value = "file:robotConfig.properties",encoding = "UTF-8")
 @ConfigurationProperties(prefix = "robot")
 public class RobotProperties {
 

@@ -1,0 +1,24 @@
+spring:
+  # 激活环境配置
+  profiles:
+    active: dev
+
+
+server:
+  servlet:
+    context-path: /api
+  # 服务端口
+  port: 10001
+
+
+
+logging:
+  logback:
+    rollingpolicy:
+      max-history:
+  config:
+  level:
+    # web信息日志记录
+    web: debug
+    # SQL日志记录
+    com.lincoco.xiaokarobot.dao: debug

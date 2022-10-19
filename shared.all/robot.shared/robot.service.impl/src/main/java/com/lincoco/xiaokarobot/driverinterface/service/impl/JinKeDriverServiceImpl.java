@@ -6,7 +6,9 @@ import com.lincoco.xiaokarobot.service.DriverService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.*;
-import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.springframework.stereotype.Service;
@@ -36,10 +38,17 @@ public class JinKeDriverServiceImpl implements DriverService {
         String formatStartTime = DTF.format(startTime);
         log.info(formatStartTime + " 用户 " + identity.getId() + " 开始执行自动打卡程序");
 
-        WebDriver driver = new EdgeDriver();
+        ChromeOptions options = new ChromeOptions();
+//        options.setHeadless(Boolean.TRUE);
+//        options.addArguments("--no-sandbox");
+//        options.addArguments("--disable-gpu");
+//        options.addArguments("--disable-dev-shm-usage");
+
+        ChromeDriver driver = new ChromeDriver(options);
         try {
             driver.get(URL);
             String title = driver.getTitle();
+            Thread.sleep(1000);
             log.info(title);
 
             //设置延迟等待时间
@@ -54,9 +63,14 @@ public class JinKeDriverServiceImpl implements DriverService {
             WebElement inputUsername = driver.findElement(By.xpath("//input[@name='username']"));
             WebElement inputPassword = driver.findElement(By.xpath("//input[@name='password']"));
             WebElement submit = driver.findElement(By.xpath("//input[@type='submit']"));
+            Thread.sleep(2000);
+            log.info("开始输入用户名密码");
             inputUsername.sendKeys(identity.getId());
             inputPassword.sendKeys(identity.getPassword());
+            log.info("用户名密码成功");
+            Thread.sleep(2000);
             submit.click();
+            log.info("尝试验证");
 
             Thread.sleep(1000);
             //跳转页面进行隐式等待
@@ -66,7 +80,7 @@ public class JinKeDriverServiceImpl implements DriverService {
             try {
                 wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='amp-header-search-input ampHeaderSearchFlag']")));
             }catch (TimeoutException e){
-                //log.info("进入异常，可能身份认证失败，建议检查学号密码是否正确: " + identity.getId() +" , "+ identity.getPassword());
+                log.info("进入异常，可能身份认证失败，建议检查学号密码是否正确: " + identity.getId() +" , "+ identity.getPassword());
                 throw new RobotException("进入异常，可能身份认证失败，建议检查学号密码是否正确: " + identity.getId() +" , "+ identity.getPassword(),identity.getId());
             }
             WebElement enableSearch = driver.findElement(By.xpath("//div[@class='amp-header-search-input ampHeaderSearchFlag']"));
@@ -89,19 +103,34 @@ public class JinKeDriverServiceImpl implements DriverService {
             Thread.sleep(2000);
             //点击搜索到的第一个
             log.info("点击搜索到的第一个");
-            //div[@class='amp-card-big-box']
             wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='amp-hover-app-card-group amp-pull-left amp-service-center-app-group']")));
             WebElement healthPunch = driver.findElement(By.xpath("//div[@class='amp-hover-app-card-group amp-pull-left amp-service-center-app-group']"));
-            //wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='appFlag amp-app-card-hover-big amp-animate-height-opacity-fast ']")));
-            //WebElement healthPunch = driver.findElement(By.xpath("//div[@class='appFlag amp-app-card-hover-big amp-animate-height-opacity-fast ']"));
-            //wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='amp-card-big-box']")));
-            //WebElement healthPunch = driver.findElement(By.xpath("//div[@class='amp-card-big-box']"));
+            Actions actions = new Actions(driver);
+            actions.moveToElement(healthPunch).perform();
+            Thread.sleep(1000);
             healthPunch.click();
 
             Thread.sleep(1000);
             //跳转页面进行隐式等待
             driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
             //重新获取句柄，始终获得当前最后的窗口
+            for (String handle : driver.getWindowHandles()) {
+                driver.switchTo().window(handle);
+            }
+            //判断是否有下次不再显示
+            try {
+                WebElement unViewInput = driver.findElement(By.xpath("//input[@id='ampDetailUnViewInput']"));
+                log.info("具有下次不再显示");
+                log.info("第一次进入打卡系统，要点击下次不再显示，并进入服务");
+                WebElement next = driver.findElement(By.xpath("//div[@class='amp-checkbox ']/label"));
+                next.click();
+                Thread.sleep(200);
+                WebElement enter = driver.findElement(By.xpath("//div[@id='ampDetailEnter']"));
+                enter.click();
+            }catch (NoSuchElementException e){
+                log.info("没有下次不再显示直接进入打卡页面");
+            }
+
             for (String handle : driver.getWindowHandles()) {
                 driver.switchTo().window(handle);
             }
