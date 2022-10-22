@@ -180,9 +180,9 @@ public class JinKeJSDriverServiceImpl implements DriverService {
 //                String text = (String) jsExecutor.executeScript("document.querySelector(\"div.content\").innerText");
                 if ("今日已打卡！".equals(resultContent.getText())){
                     log.info(" 用户 " + identity.getId() + " 已经成功打完卡，取消爬虫");
+                    return;
                 }
 //                driver.close();
-                return;
             }catch (NoSuchElementException e){
                 log.info("还未打完卡，继续执行");
             }
@@ -193,7 +193,7 @@ public class JinKeJSDriverServiceImpl implements DriverService {
             Thread.sleep(10 * 1000);
             WebElement promiseButton = driver.findElement(By.xpath("//button[@class='bh-btn bh-btn-primary bh-pull-right']"));
 //            promiseButton.click();
-            jsExecutor.executeScript("document.querySelector(\"button.bh-btn bh-btn-primary.bh-pull-right\").click()");
+            jsExecutor.executeScript("document.querySelector(\"button.bh-btn.bh-btn-primary.bh-pull-right\").click()");
 
 
             Thread.sleep(1000);
@@ -406,7 +406,8 @@ public class JinKeJSDriverServiceImpl implements DriverService {
                 throw new RobotException("已经执行完打卡任务，但最终校验发生错误，请检查是否打卡成功",identity.getId());
             }
         }finally {
-            driver.close();
+//            driver.close();
+            driver.quit();
             log.info("关闭driver");
             log.info("用户 " + identity.getId() + " 执行自动打卡结束");
         }

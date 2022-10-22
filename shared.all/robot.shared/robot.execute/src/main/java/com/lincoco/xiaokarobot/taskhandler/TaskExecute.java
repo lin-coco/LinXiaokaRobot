@@ -52,7 +52,11 @@ public class TaskExecute {
     @Autowired
     private UserIdentityService userIdentityService;
 
-    public void execute(){
+    /**
+     * 使用同步机制，同一时间只有 1 个正在执行
+     */
+    public synchronized void execute(){
+        LocalDateTime start = LocalDateTime.now();
         Integer retry = robotProperties.getRetry();
 
         ThreadPoolExecutor executor = threadPoolCreater();
@@ -90,7 +94,7 @@ public class TaskExecute {
             log.info("一共有：" + RetryTask.ROBOT_TASKS.size() + " 个, 分别是" + RetryTask.stringList());
             //通过邮件发送给主人
 
-            String content = RetryTask.getStringSimple() + "\n" + "外加今日自动打卡日志";
+            String content = RetryTask.getStringSimple() + "\n" + "外加今日自动打卡日志" + "\n" + "开始时间：" + dtf.format(start);
             RetryTask.ROBOT_TASKS.clear();
             String filePath = "./logs/info/" + now.getYear() + "-" + now.getMonthValue() + "/" + now.getYear() + "-" + now.getMonthValue() + "-" + now.getDayOfMonth() + ".0.log";
             try {
@@ -105,8 +109,16 @@ public class TaskExecute {
             //全部成功 通知
             log.info("一共 " +taskSize+ " 任务 全部成功！");
             //通过邮件发送
-            String content = "一共 " +taskSize+ " 任务 全部成功！";
-            robotMailSender.sendSimpleMail(master.getMailbox(), "小恩提醒："+dtf.format(now) + " 全部成功！",content);
+            String filePath = "./logs/info/" + now.getYear() + "-" + now.getMonthValue() + "/" + now.getYear() + "-" + now.getMonthValue() + "-" + now.getDayOfMonth() + ".0.log";
+            String content = "一共 " +taskSize+ " 任务 全部成功！" + "\n" + "开始时间：" + dtf.format(start);
+            try {
+                robotMailSender.sendAttachmentMail(master.getMailbox(), "小恩提醒："+dtf.format(now) + " 全部成功！",content,filePath);
+            } catch (MessagingException e) {
+                e.printStackTrace();
+                log.info("邮件发送异常，准备发送简单邮件");
+                content = content + " ( 邮件发送异常，已改为发送简单邮件，无附件)";
+                robotMailSender.sendSimpleMail(master.getMailbox(), "小恩提醒："+dtf.format(now) + " 全部成功！",content);
+            }
         }
     }
 
