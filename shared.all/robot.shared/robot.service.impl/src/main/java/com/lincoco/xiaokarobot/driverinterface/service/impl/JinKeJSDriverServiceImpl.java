@@ -39,10 +39,10 @@ public class JinKeJSDriverServiceImpl implements DriverService {
         log.info(formatStartTime + " 用户 " + identity.getId() + " 开始执行自动打卡程序");
 
         ChromeOptions options = new ChromeOptions();
-        options.setHeadless(Boolean.TRUE);
-        options.addArguments("--no-sandbox");
-        options.addArguments("--disable-gpu");
-        options.addArguments("--disable-dev-shm-usage");
+//        options.setHeadless(Boolean.TRUE);
+//        options.addArguments("--no-sandbox");
+//        options.addArguments("--disable-gpu");
+//        options.addArguments("--disable-dev-shm-usage");
 
         ChromeDriver driver = new ChromeDriver(options);
         JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
@@ -130,7 +130,7 @@ public class JinKeJSDriverServiceImpl implements DriverService {
             actions.moveToElement(healthPunch).perform();
 //            Thread.sleep(1000);
             healthPunch.click();
-            jsExecutor.executeScript("document.querySelector(\"div.amp-hover-app-card-group.amp-pull-left.amp-service-center-app-group.amp-active\").click()");
+//            jsExecutor.executeScript("document.querySelector(\"div.amp-hover-app-card-group.amp-pull-left.amp-service-center-app-group.amp-active\").click()");
 //            jsExecutor.executeScript("document.querySelector(\"div.amp-app-card-single.amp-clearfix-child\").click()");
 
 
@@ -152,7 +152,7 @@ public class JinKeJSDriverServiceImpl implements DriverService {
                 Thread.sleep(200);
                 WebElement enter = driver.findElement(By.xpath("//div[@id='ampDetailEnter']"));
 //                enter.click();
-                jsExecutor.executeScript("document.querySelector(\"div.ampDetailEnter\").click()");
+                jsExecutor.executeScript("document.querySelector(\"div#ampDetailEnter\").click()");
             }catch (NoSuchElementException e){
                 log.info("没有下次不再显示直接进入打卡页面");
             }

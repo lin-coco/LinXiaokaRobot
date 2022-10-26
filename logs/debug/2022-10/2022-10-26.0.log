@@ -1,0 +1,78 @@
+2022-10-26 17:42:52.337 [main] "  " DEBUG org.springframework.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2022-10-26 17:42:52.347 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-10-26 17:42:52.347 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+2022-10-26 17:42:52.698 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-26 17:42:52.724 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2022-10-26 17:42:52.732 [main] "  " DEBUG o.s.web.servlet.handler.BeanNameUrlHandlerMapping - Detected 1 mappings in 'beanNameHandlerMapping'
+2022-10-26 17:42:52.739 [main] "  " DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-26 17:42:52.745 [main] "  " DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-26 17:43:47.441 [http-nio-10001-exec-1] "  " DEBUG org.springframework.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2022-10-26 17:43:47.445 [http-nio-10001-exec-1] "  " DEBUG org.springframework.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-10-26 17:43:47.451 [http-nio-10001-exec-1] "  " DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/robot", parameters={}
+2022-10-26 17:43:47.452 [http-nio-10001-exec-1] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.lincoco.xiaokarobot.RobotApi#execute()
+2022-10-26 17:43:47.740 [http-nio-10001-exec-1] "  " DEBUG c.l.xiaokarobot.dao.UserIdentityDAO.selectList - ==>  Preparing: SELECT id,password,phone_number,mailbox,school,create_time,update_time,delete_time FROM user_identity WHERE delete_time IS NULL
+2022-10-26 17:43:47.754 [http-nio-10001-exec-1] "  " DEBUG c.l.xiaokarobot.dao.UserIdentityDAO.selectList - ==> Parameters: 
+2022-10-26 17:43:47.783 [http-nio-10001-exec-1] "  " DEBUG c.l.xiaokarobot.dao.UserIdentityDAO.selectList - <==      Total: 5
+2022-10-26 17:46:36.055 [http-nio-10001-exec-1] "  " DEBUG c.l.xiaokarobot.dao.UserIdentityDAO.selectById - ==>  Preparing: SELECT id,password,phone_number,mailbox,school,create_time,update_time,delete_time FROM user_identity WHERE id=? AND delete_time IS NULL
+2022-10-26 17:46:36.056 [http-nio-10001-exec-1] "  " DEBUG c.l.xiaokarobot.dao.UserIdentityDAO.selectById - ==> Parameters: 2012011085(String)
+2022-10-26 17:46:36.069 [http-nio-10001-exec-1] "  " DEBUG c.l.xiaokarobot.dao.UserIdentityDAO.selectById - <==      Total: 1
+2022-10-26 17:46:37.248 [http-nio-10001-exec-1] "  " DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-10-26 17:46:37.248 [http-nio-10001-exec-1] "  " DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Nothing to write: null body
+2022-10-26 17:46:37.249 [http-nio-10001-exec-1] "  " DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2022-10-26 17:48:45.428 [main] "  " DEBUG org.springframework.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2022-10-26 17:48:45.439 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-10-26 17:48:45.439 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+2022-10-26 17:48:45.775 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-26 17:48:45.800 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2022-10-26 17:48:45.808 [main] "  " DEBUG o.s.web.servlet.handler.BeanNameUrlHandlerMapping - Detected 1 mappings in 'beanNameHandlerMapping'
+2022-10-26 17:48:45.815 [main] "  " DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-26 17:48:45.820 [main] "  " DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-26 17:49:00.980 [http-nio-10001-exec-1] "  " DEBUG org.springframework.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2022-10-26 17:49:00.984 [http-nio-10001-exec-1] "  " DEBUG org.springframework.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-10-26 17:49:00.989 [http-nio-10001-exec-1] "  " DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/robot", parameters={}
+2022-10-26 17:49:00.991 [http-nio-10001-exec-1] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.lincoco.xiaokarobot.RobotApi#execute()
+2022-10-26 17:49:01.261 [http-nio-10001-exec-1] "  " DEBUG c.l.xiaokarobot.dao.UserIdentityDAO.selectList - ==>  Preparing: SELECT id,password,phone_number,mailbox,school,create_time,update_time,delete_time FROM user_identity WHERE delete_time IS NULL
+2022-10-26 17:49:01.275 [http-nio-10001-exec-1] "  " DEBUG c.l.xiaokarobot.dao.UserIdentityDAO.selectList - ==> Parameters: 
+2022-10-26 17:49:01.302 [http-nio-10001-exec-1] "  " DEBUG c.l.xiaokarobot.dao.UserIdentityDAO.selectList - <==      Total: 5
+2022-10-26 17:52:02.845 [main] "  " DEBUG org.springframework.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2022-10-26 17:52:02.856 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-10-26 17:52:02.856 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+2022-10-26 17:52:03.188 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-26 17:52:03.214 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2022-10-26 17:52:03.222 [main] "  " DEBUG o.s.web.servlet.handler.BeanNameUrlHandlerMapping - Detected 1 mappings in 'beanNameHandlerMapping'
+2022-10-26 17:52:03.230 [main] "  " DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-26 17:52:03.235 [main] "  " DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-26 17:52:09.343 [http-nio-10001-exec-1] "  " DEBUG org.springframework.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2022-10-26 17:52:09.347 [http-nio-10001-exec-1] "  " DEBUG org.springframework.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-10-26 17:52:09.352 [http-nio-10001-exec-1] "  " DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/robot", parameters={}
+2022-10-26 17:52:09.354 [http-nio-10001-exec-1] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.lincoco.xiaokarobot.RobotApi#execute()
+2022-10-26 17:52:09.623 [http-nio-10001-exec-1] "  " DEBUG c.l.xiaokarobot.dao.UserIdentityDAO.selectList - ==>  Preparing: SELECT id,password,phone_number,mailbox,school,create_time,update_time,delete_time FROM user_identity WHERE delete_time IS NULL
+2022-10-26 17:52:09.636 [http-nio-10001-exec-1] "  " DEBUG c.l.xiaokarobot.dao.UserIdentityDAO.selectList - ==> Parameters: 
+2022-10-26 17:52:09.662 [http-nio-10001-exec-1] "  " DEBUG c.l.xiaokarobot.dao.UserIdentityDAO.selectList - <==      Total: 5
+2022-10-26 17:55:24.399 [http-nio-10001-exec-1] "  " DEBUG c.l.xiaokarobot.dao.UserIdentityDAO.selectById - ==>  Preparing: SELECT id,password,phone_number,mailbox,school,create_time,update_time,delete_time FROM user_identity WHERE id=? AND delete_time IS NULL
+2022-10-26 17:55:24.400 [http-nio-10001-exec-1] "  " DEBUG c.l.xiaokarobot.dao.UserIdentityDAO.selectById - ==> Parameters: 2012011085(String)
+2022-10-26 17:55:24.415 [http-nio-10001-exec-1] "  " DEBUG c.l.xiaokarobot.dao.UserIdentityDAO.selectById - <==      Total: 1
+2022-10-26 17:55:25.619 [http-nio-10001-exec-1] "  " DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-10-26 17:55:25.619 [http-nio-10001-exec-1] "  " DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Nothing to write: null body
+2022-10-26 17:55:25.620 [http-nio-10001-exec-1] "  " DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2022-10-26 17:57:12.599 [main] "  " DEBUG org.springframework.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2022-10-26 17:57:12.609 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-10-26 17:57:12.610 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+2022-10-26 17:57:12.943 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-10-26 17:57:12.968 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2022-10-26 17:57:12.976 [main] "  " DEBUG o.s.web.servlet.handler.BeanNameUrlHandlerMapping - Detected 1 mappings in 'beanNameHandlerMapping'
+2022-10-26 17:57:12.983 [main] "  " DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-10-26 17:57:12.989 [main] "  " DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-10-26 17:57:21.943 [http-nio-10001-exec-1] "  " DEBUG org.springframework.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2022-10-26 17:57:21.947 [http-nio-10001-exec-1] "  " DEBUG org.springframework.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-10-26 17:57:21.952 [http-nio-10001-exec-1] "  " DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/robot", parameters={}
+2022-10-26 17:57:21.954 [http-nio-10001-exec-1] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.lincoco.xiaokarobot.RobotApi#execute()
+2022-10-26 17:57:22.223 [http-nio-10001-exec-1] "  " DEBUG c.l.xiaokarobot.dao.UserIdentityDAO.selectList - ==>  Preparing: SELECT id,password,phone_number,mailbox,school,create_time,update_time,delete_time FROM user_identity WHERE delete_time IS NULL
+2022-10-26 17:57:22.237 [http-nio-10001-exec-1] "  " DEBUG c.l.xiaokarobot.dao.UserIdentityDAO.selectList - ==> Parameters: 
+2022-10-26 17:57:22.264 [http-nio-10001-exec-1] "  " DEBUG c.l.xiaokarobot.dao.UserIdentityDAO.selectList - <==      Total: 5
+2022-10-26 17:59:14.950 [http-nio-10001-exec-1] "  " DEBUG c.l.xiaokarobot.dao.UserIdentityDAO.selectById - ==>  Preparing: SELECT id,password,phone_number,mailbox,school,create_time,update_time,delete_time FROM user_identity WHERE id=? AND delete_time IS NULL
+2022-10-26 17:59:14.950 [http-nio-10001-exec-1] "  " DEBUG c.l.xiaokarobot.dao.UserIdentityDAO.selectById - ==> Parameters: 2012011085(String)
+2022-10-26 17:59:14.963 [http-nio-10001-exec-1] "  " DEBUG c.l.xiaokarobot.dao.UserIdentityDAO.selectById - <==      Total: 1
+2022-10-26 17:59:16.058 [http-nio-10001-exec-1] "  " DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-10-26 17:59:16.058 [http-nio-10001-exec-1] "  " DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Nothing to write: null body
+2022-10-26 17:59:16.059 [http-nio-10001-exec-1] "  " DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK

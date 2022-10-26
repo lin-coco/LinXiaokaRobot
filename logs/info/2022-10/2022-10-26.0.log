@@ -1,0 +1,625 @@
+2022-10-26 17:42:51.654 [main] "  " INFO  com.lincoco.xiaokarobot.LinXiaokaRobotApplication - Starting LinXiaokaRobotApplication on bogon with PID 69598 (/Users/xueyeshang/Desktop/林coco团队/LinXiaokaRobot/application/target/classes started by xueyeshang in /Users/xueyeshang/Desktop/林coco团队/LinXiaokaRobot)
+2022-10-26 17:42:51.655 [main] "  " INFO  com.lincoco.xiaokarobot.LinXiaokaRobotApplication - The following profiles are active: dev
+2022-10-26 17:42:52.284 [main] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 10001 (http)
+2022-10-26 17:42:52.290 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10001"]
+2022-10-26 17:42:52.290 [main] "  " INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-10-26 17:42:52.290 [main] "  " INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-10-26 17:42:52.336 [main] "  " INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2022-10-26 17:42:52.337 [main] "  " INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 657 ms
+2022-10-26 17:42:52.692 [main] "  " INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-10-26 17:42:52.795 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-10001"]
+2022-10-26 17:42:52.808 [main] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 10001 (http) with context path '/api'
+2022-10-26 17:42:52.814 [main] "  " INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2022-10-26 17:42:52.817 [main] "  " INFO  com.lincoco.xiaokarobot.schedule.ScheduleTask - 使用CronTrigger触发器 : 0 10 0 * * ?
+2022-10-26 17:42:52.819 [main] "  " INFO  com.lincoco.xiaokarobot.LinXiaokaRobotApplication - Started LinXiaokaRobotApplication in 1.613 seconds (JVM running for 1.98)
+2022-10-26 17:43:47.441 [http-nio-10001-exec-1] "  " INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-26 17:43:47.441 [http-nio-10001-exec-1] "  " INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-10-26 17:43:47.445 [http-nio-10001-exec-1] "  " INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2022-10-26 17:43:47.495 [http-nio-10001-exec-1] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-10-26 17:43:47.735 [http-nio-10001-exec-1] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-10-26 17:43:47.789 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 2022-10-26 17-43-47 用户 2012011083 开始执行自动打卡程序
+2022-10-26 17:43:47.789 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 2022-10-26 17-43-47 用户 2012011084 开始执行自动打卡程序
+2022-10-26 17:43:52.390 [Forwarding newSession on session null to remote] "  " INFO  org.openqa.selenium.remote.ProtocolHandshake - Detected dialect: W3C
+2022-10-26 17:43:53.909 [Forwarding newSession on session null to remote] "  " INFO  org.openqa.selenium.remote.ProtocolHandshake - Detected dialect: W3C
+2022-10-26 17:43:54.599 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 金陵科技学院-统一身份认证
+2022-10-26 17:43:54.602 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始对2012011084 , 223755 进行认证
+2022-10-26 17:43:54.822 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始输入用户名密码
+2022-10-26 17:43:54.840 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户名密码成功
+2022-10-26 17:43:55.959 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 金陵科技学院-统一身份认证
+2022-10-26 17:43:55.959 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始对2012011083 , 252013 进行认证
+2022-10-26 17:43:56.166 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始输入用户名密码
+2022-10-26 17:43:56.185 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 尝试验证
+2022-10-26 17:43:56.187 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户名密码成功
+2022-10-26 17:43:57.195 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索栏
+2022-10-26 17:43:58.028 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 尝试验证
+2022-10-26 17:43:59.033 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索栏
+2022-10-26 17:44:06.289 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 写入搜索内容: 健康信息每日打卡
+2022-10-26 17:44:06.352 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 写入搜索内容: 健康信息每日打卡
+2022-10-26 17:44:08.701 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 执行搜索
+2022-10-26 17:44:09.179 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 执行搜索
+2022-10-26 17:44:12.354 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索到的第一个
+2022-10-26 17:44:12.600 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索到的第一个
+2022-10-26 17:44:14.042 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 关闭driver
+2022-10-26 17:44:14.042 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户 2012011083 执行自动打卡结束
+2022-10-26 17:44:14.042 [Thread-161] "  " INFO  com.lincoco.xiaokarobot.taskhandler.RobotTask - javascript error: Cannot read properties of null (reading 'click')
+  (Session info: chrome=106.0.5249.119)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'bogon', ip: 'fe80:0:0:0:c5d:5bb9:4f7:c21a%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.5', java.version: '1.8.0_352'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: /var/folders/md/6f7q4dws4n9...}, goog:chromeOptions: {debuggerAddress: localhost:55778}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ea33cd46e282c2e076f110da168f9861
+2022-10-26 17:44:14.044 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 2022-10-26 17-44-14 用户 2012011085 开始执行自动打卡程序
+2022-10-26 17:44:15.723 [Forwarding newSession on session null to remote] "  " INFO  org.openqa.selenium.remote.ProtocolHandshake - Detected dialect: W3C
+2022-10-26 17:44:17.770 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 金陵科技学院-统一身份认证
+2022-10-26 17:44:17.770 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始对2012011085 , 201213 进行认证
+2022-10-26 17:44:17.959 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始输入用户名密码
+2022-10-26 17:44:17.977 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户名密码成功
+2022-10-26 17:44:19.432 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 尝试验证
+2022-10-26 17:44:20.440 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索栏
+2022-10-26 17:44:25.370 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 写入搜索内容: 健康信息每日打卡
+2022-10-26 17:44:26.532 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 执行搜索
+2022-10-26 17:44:28.308 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索到的第一个
+2022-10-26 17:44:34.379 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 没有下次不再显示直接进入打卡页面
+2022-10-26 17:44:34.381 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 健康信息每日打卡
+2022-10-26 17:44:34.420 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击新增按钮
+2022-10-26 17:44:36.778 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl -  用户 2012011084 已经成功打完卡，取消爬虫
+2022-10-26 17:44:36.890 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 关闭driver
+2022-10-26 17:44:36.891 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户 2012011084 执行自动打卡结束
+2022-10-26 17:44:36.891 [Thread-162] "  " INFO  com.lincoco.xiaokarobot.taskhandler.RobotTask - 2012011084 执行花了49秒
+2022-10-26 17:44:36.891 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 2022-10-26 17-44-36 用户 2012011086 开始执行自动打卡程序
+2022-10-26 17:44:38.265 [Forwarding newSession on session null to remote] "  " INFO  org.openqa.selenium.remote.ProtocolHandshake - Detected dialect: W3C
+2022-10-26 17:44:40.264 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 金陵科技学院-统一身份认证
+2022-10-26 17:44:40.264 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始对2012011086 , 130019 进行认证
+2022-10-26 17:44:40.442 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始输入用户名密码
+2022-10-26 17:44:40.458 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户名密码成功
+2022-10-26 17:44:41.742 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 尝试验证
+2022-10-26 17:44:42.750 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索栏
+2022-10-26 17:44:48.521 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 写入搜索内容: 健康信息每日打卡
+2022-10-26 17:44:50.582 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 执行搜索
+2022-10-26 17:44:50.905 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 没有下次不再显示直接进入打卡页面
+2022-10-26 17:44:50.908 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 健康信息每日打卡
+2022-10-26 17:44:50.938 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击新增按钮
+2022-10-26 17:44:52.471 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索到的第一个
+2022-10-26 17:44:53.391 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl -  用户 2012011085 已经成功打完卡，取消爬虫
+2022-10-26 17:44:53.509 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 关闭driver
+2022-10-26 17:44:53.509 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户 2012011085 执行自动打卡结束
+2022-10-26 17:44:53.509 [Thread-161] "  " INFO  com.lincoco.xiaokarobot.taskhandler.RobotTask - 2012011085 执行花了39秒
+2022-10-26 17:44:53.509 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 2022-10-26 17-44-53 用户 2012011092 开始执行自动打卡程序
+2022-10-26 17:44:56.231 [Forwarding newSession on session null to remote] "  " INFO  org.openqa.selenium.remote.ProtocolHandshake - Detected dialect: W3C
+2022-10-26 17:44:58.251 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 金陵科技学院-统一身份认证
+2022-10-26 17:44:58.251 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始对2012011092 , 270378 进行认证
+2022-10-26 17:44:58.425 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始输入用户名密码
+2022-10-26 17:44:58.443 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户名密码成功
+2022-10-26 17:44:59.811 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 尝试验证
+2022-10-26 17:45:00.815 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索栏
+2022-10-26 17:45:05.288 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 写入搜索内容: 健康信息每日打卡
+2022-10-26 17:45:06.611 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 执行搜索
+2022-10-26 17:45:08.246 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索到的第一个
+2022-10-26 17:45:14.723 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 没有下次不再显示直接进入打卡页面
+2022-10-26 17:45:14.725 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 健康信息每日打卡
+2022-10-26 17:45:14.754 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击新增按钮
+2022-10-26 17:45:17.193 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl -  用户 2012011086 已经成功打完卡，取消爬虫
+2022-10-26 17:45:17.307 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 关闭driver
+2022-10-26 17:45:17.308 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户 2012011086 执行自动打卡结束
+2022-10-26 17:45:17.308 [Thread-162] "  " INFO  com.lincoco.xiaokarobot.taskhandler.RobotTask - 2012011086 执行花了40秒
+2022-10-26 17:45:30.696 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 没有下次不再显示直接进入打卡页面
+2022-10-26 17:45:30.700 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 健康信息每日打卡
+2022-10-26 17:45:30.717 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击新增按钮
+2022-10-26 17:45:33.096 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl -  用户 2012011092 已经成功打完卡，取消爬虫
+2022-10-26 17:45:33.204 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 关闭driver
+2022-10-26 17:45:33.204 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户 2012011092 执行自动打卡结束
+2022-10-26 17:45:33.205 [Thread-161] "  " INFO  com.lincoco.xiaokarobot.taskhandler.RobotTask - 2012011092 执行花了39秒
+2022-10-26 17:45:33.205 [http-nio-10001-exec-1] "  " INFO  com.lincoco.xiaokarobot.taskhandler.TaskExecute - 重试开始
+2022-10-26 17:45:33.205 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 2022-10-26 17-45-33 用户 2012011083 开始执行自动打卡程序
+2022-10-26 17:45:34.730 [Forwarding newSession on session null to remote] "  " INFO  org.openqa.selenium.remote.ProtocolHandshake - Detected dialect: W3C
+2022-10-26 17:45:36.732 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 金陵科技学院-统一身份认证
+2022-10-26 17:45:36.732 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始对2012011083 , 252013 进行认证
+2022-10-26 17:45:36.910 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始输入用户名密码
+2022-10-26 17:45:36.926 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户名密码成功
+2022-10-26 17:45:39.437 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 尝试验证
+2022-10-26 17:45:40.445 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索栏
+2022-10-26 17:45:45.108 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 写入搜索内容: 健康信息每日打卡
+2022-10-26 17:45:46.384 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 执行搜索
+2022-10-26 17:45:48.103 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索到的第一个
+2022-10-26 17:45:50.638 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 关闭driver
+2022-10-26 17:45:50.638 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户 2012011083 执行自动打卡结束
+2022-10-26 17:45:50.638 [Thread-162] "  " INFO  com.lincoco.xiaokarobot.taskhandler.RobotTask - javascript error: Cannot read properties of null (reading 'click')
+  (Session info: chrome=106.0.5249.119)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'bogon', ip: 'fe80:0:0:0:c5d:5bb9:4f7:c21a%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.5', java.version: '1.8.0_352'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: /var/folders/md/6f7q4dws4n9...}, goog:chromeOptions: {debuggerAddress: localhost:56303}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5c6887c199a0bda9ae5d0e7573bb15be
+2022-10-26 17:45:50.639 [http-nio-10001-exec-1] "  " INFO  com.lincoco.xiaokarobot.taskhandler.TaskExecute - 一次重试结束，还剩2 此重试
+2022-10-26 17:45:50.639 [http-nio-10001-exec-1] "  " INFO  com.lincoco.xiaokarobot.taskhandler.TaskExecute - 重试开始
+2022-10-26 17:45:50.639 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 2022-10-26 17-45-50 用户 2012011083 开始执行自动打卡程序
+2022-10-26 17:45:51.924 [Forwarding newSession on session null to remote] "  " INFO  org.openqa.selenium.remote.ProtocolHandshake - Detected dialect: W3C
+2022-10-26 17:45:54.266 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 金陵科技学院-统一身份认证
+2022-10-26 17:45:54.267 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始对2012011083 , 252013 进行认证
+2022-10-26 17:45:54.453 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始输入用户名密码
+2022-10-26 17:45:54.467 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户名密码成功
+2022-10-26 17:45:55.931 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 尝试验证
+2022-10-26 17:45:56.943 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索栏
+2022-10-26 17:45:59.731 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 写入搜索内容: 健康信息每日打卡
+2022-10-26 17:46:02.265 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 执行搜索
+2022-10-26 17:46:04.170 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索到的第一个
+2022-10-26 17:46:12.446 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 关闭driver
+2022-10-26 17:46:12.446 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户 2012011083 执行自动打卡结束
+2022-10-26 17:46:12.446 [Thread-161] "  " INFO  com.lincoco.xiaokarobot.taskhandler.RobotTask - element click intercepted: Element <div class="amp-hover-app-card-group amp-pull-left amp-service-center-app-group">...</div> is not clickable at point (316, 655). Other element would receive the click: <div id="ascrail2005" class="nicescroll-rails nicescroll-rails-vr" style="width: 6px; z-index: 1000; cursor: default; position: absolute; top: 20px; left: 311px; height: 627px; display: block; opacity: 1;">...</div>
+  (Session info: chrome=106.0.5249.119)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'bogon', ip: 'fe80:0:0:0:c5d:5bb9:4f7:c21a%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.5', java.version: '1.8.0_352'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: /var/folders/md/6f7q4dws4n9...}, goog:chromeOptions: {debuggerAddress: localhost:56362}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fe298c0801d694d3c2b014b9d222cb05
+2022-10-26 17:46:12.446 [http-nio-10001-exec-1] "  " INFO  com.lincoco.xiaokarobot.taskhandler.TaskExecute - 一次重试结束，还剩1 此重试
+2022-10-26 17:46:12.446 [http-nio-10001-exec-1] "  " INFO  com.lincoco.xiaokarobot.taskhandler.TaskExecute - 重试开始
+2022-10-26 17:46:12.446 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 2022-10-26 17-46-12 用户 2012011083 开始执行自动打卡程序
+2022-10-26 17:46:15.430 [Forwarding newSession on session null to remote] "  " INFO  org.openqa.selenium.remote.ProtocolHandshake - Detected dialect: W3C
+2022-10-26 17:46:17.677 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 金陵科技学院-统一身份认证
+2022-10-26 17:46:17.678 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始对2012011083 , 252013 进行认证
+2022-10-26 17:46:17.856 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始输入用户名密码
+2022-10-26 17:46:17.885 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户名密码成功
+2022-10-26 17:46:19.526 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 尝试验证
+2022-10-26 17:46:20.533 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索栏
+2022-10-26 17:46:26.054 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 写入搜索内容: 健康信息每日打卡
+2022-10-26 17:46:28.123 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 执行搜索
+2022-10-26 17:46:29.185 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索到的第一个
+2022-10-26 17:46:36.041 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 关闭driver
+2022-10-26 17:46:36.042 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户 2012011083 执行自动打卡结束
+2022-10-26 17:46:36.042 [Thread-162] "  " INFO  com.lincoco.xiaokarobot.taskhandler.RobotTask - element click intercepted: Element <div class="amp-hover-app-card-group amp-pull-left amp-service-center-app-group">...</div> is not clickable at point (316, 655). Other element would receive the click: <div id="ascrail2005" class="nicescroll-rails nicescroll-rails-vr" style="width: 6px; z-index: 1000; cursor: default; position: absolute; top: 20px; left: 311px; height: 627px; display: block; opacity: 1;">...</div>
+  (Session info: chrome=106.0.5249.119)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'bogon', ip: 'fe80:0:0:0:c5d:5bb9:4f7:c21a%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.5', java.version: '1.8.0_352'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: /var/folders/md/6f7q4dws4n9...}, goog:chromeOptions: {debuggerAddress: localhost:56419}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 487f6181eb9eb297e009f2145cf26a77
+2022-10-26 17:46:36.042 [http-nio-10001-exec-1] "  " INFO  com.lincoco.xiaokarobot.taskhandler.TaskExecute - 一次重试结束，还剩0 此重试
+2022-10-26 17:46:36.069 [http-nio-10001-exec-1] "  " INFO  com.lincoco.xiaokarobot.taskhandler.TaskExecute - 一共有：1 个, 分别是[ 2012011083
+2022-10-26 17:46:37.229 [http-nio-10001-exec-1] "  " INFO  com.lincoco.xiaokarobot.mailsender.RobotMailSender - 【附件邮件】成功发送！to=2879322503@qq.com
+2022-10-26 17:48:41.299 [SpringContextShutdownHook] "  " INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-10-26 17:48:41.300 [SpringContextShutdownHook] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2022-10-26 17:48:41.304 [SpringContextShutdownHook] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2022-10-26 17:48:44.774 [main] "  " INFO  com.lincoco.xiaokarobot.LinXiaokaRobotApplication - Starting LinXiaokaRobotApplication on bogon with PID 70081 (/Users/xueyeshang/Desktop/林coco团队/LinXiaokaRobot/application/target/classes started by xueyeshang in /Users/xueyeshang/Desktop/林coco团队/LinXiaokaRobot)
+2022-10-26 17:48:44.775 [main] "  " INFO  com.lincoco.xiaokarobot.LinXiaokaRobotApplication - The following profiles are active: dev
+2022-10-26 17:48:45.380 [main] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 10001 (http)
+2022-10-26 17:48:45.385 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10001"]
+2022-10-26 17:48:45.386 [main] "  " INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-10-26 17:48:45.386 [main] "  " INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-10-26 17:48:45.428 [main] "  " INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2022-10-26 17:48:45.428 [main] "  " INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 623 ms
+2022-10-26 17:48:45.768 [main] "  " INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-10-26 17:48:45.871 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-10001"]
+2022-10-26 17:48:45.885 [main] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 10001 (http) with context path '/api'
+2022-10-26 17:48:45.891 [main] "  " INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2022-10-26 17:48:45.893 [main] "  " INFO  com.lincoco.xiaokarobot.schedule.ScheduleTask - 使用CronTrigger触发器 : 0 10 0 * * ?
+2022-10-26 17:48:45.895 [main] "  " INFO  com.lincoco.xiaokarobot.LinXiaokaRobotApplication - Started LinXiaokaRobotApplication in 1.467 seconds (JVM running for 1.803)
+2022-10-26 17:49:00.980 [http-nio-10001-exec-1] "  " INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-26 17:49:00.980 [http-nio-10001-exec-1] "  " INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-10-26 17:49:00.984 [http-nio-10001-exec-1] "  " INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2022-10-26 17:49:01.030 [http-nio-10001-exec-1] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-10-26 17:49:01.256 [http-nio-10001-exec-1] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-10-26 17:49:01.309 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 2022-10-26 17-49-01 用户 2012011083 开始执行自动打卡程序
+2022-10-26 17:49:01.309 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 2022-10-26 17-49-01 用户 2012011084 开始执行自动打卡程序
+2022-10-26 17:49:03.398 [Forwarding newSession on session null to remote] "  " INFO  org.openqa.selenium.remote.ProtocolHandshake - Detected dialect: W3C
+2022-10-26 17:49:03.597 [Forwarding newSession on session null to remote] "  " INFO  org.openqa.selenium.remote.ProtocolHandshake - Detected dialect: W3C
+2022-10-26 17:49:05.502 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 金陵科技学院-统一身份认证
+2022-10-26 17:49:05.506 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始对2012011083 , 252013 进行认证
+2022-10-26 17:49:05.684 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 金陵科技学院-统一身份认证
+2022-10-26 17:49:05.684 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始对2012011084 , 223755 进行认证
+2022-10-26 17:49:05.693 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始输入用户名密码
+2022-10-26 17:49:05.715 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户名密码成功
+2022-10-26 17:49:05.880 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始输入用户名密码
+2022-10-26 17:49:05.897 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户名密码成功
+2022-10-26 17:49:07.245 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 尝试验证
+2022-10-26 17:49:07.533 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 尝试验证
+2022-10-26 17:49:08.254 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索栏
+2022-10-26 17:49:08.539 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索栏
+2022-10-26 17:49:14.485 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 写入搜索内容: 健康信息每日打卡
+2022-10-26 17:49:16.861 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 写入搜索内容: 健康信息每日打卡
+2022-10-26 17:49:17.119 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 执行搜索
+2022-10-26 17:49:18.686 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 执行搜索
+2022-10-26 17:49:19.824 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索到的第一个
+2022-10-26 17:49:22.053 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索到的第一个
+2022-10-26 17:49:42.767 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 没有下次不再显示直接进入打卡页面
+2022-10-26 17:49:42.769 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 金陵科技学院网上服务大厅
+2022-10-26 17:49:42.777 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击新增按钮
+2022-10-26 17:49:43.402 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 没有下次不再显示直接进入打卡页面
+2022-10-26 17:49:43.404 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 金陵科技学院网上服务大厅
+2022-10-26 17:49:43.412 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击新增按钮
+2022-10-26 17:50:02.930 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 关闭driver
+2022-10-26 17:50:02.930 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户 2012011084 执行自动打卡结束
+2022-10-26 17:50:02.930 [Thread-161] "  " INFO  com.lincoco.xiaokarobot.taskhandler.RobotTask - Expected condition failed: waiting for presence of element located by: By.xpath: //div[@data-action='add'] (tried for 15 second(s) with 500 milliseconds interval)
+2022-10-26 17:50:02.933 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 2022-10-26 17-50-02 用户 2012011085 开始执行自动打卡程序
+2022-10-26 17:50:03.685 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 关闭driver
+2022-10-26 17:50:03.697 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户 2012011083 执行自动打卡结束
+2022-10-26 17:50:03.714 [Thread-160] "  " INFO  com.lincoco.xiaokarobot.taskhandler.RobotTask - Expected condition failed: waiting for presence of element located by: By.xpath: //div[@data-action='add'] (tried for 15 second(s) with 500 milliseconds interval)
+2022-10-26 17:50:03.715 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 2022-10-26 17-50-03 用户 2012011086 开始执行自动打卡程序
+2022-10-26 17:50:05.183 [Forwarding newSession on session null to remote] "  " INFO  org.openqa.selenium.remote.ProtocolHandshake - Detected dialect: W3C
+2022-10-26 17:50:05.671 [Forwarding newSession on session null to remote] "  " INFO  org.openqa.selenium.remote.ProtocolHandshake - Detected dialect: W3C
+2022-10-26 17:50:07.337 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 金陵科技学院-统一身份认证
+2022-10-26 17:50:07.338 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始对2012011086 , 130019 进行认证
+2022-10-26 17:50:07.521 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始输入用户名密码
+2022-10-26 17:50:07.539 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户名密码成功
+2022-10-26 17:50:07.710 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 金陵科技学院-统一身份认证
+2022-10-26 17:50:07.710 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始对2012011085 , 201213 进行认证
+2022-10-26 17:50:07.917 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始输入用户名密码
+2022-10-26 17:50:07.938 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户名密码成功
+2022-10-26 17:50:09.061 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 尝试验证
+2022-10-26 17:50:09.484 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 尝试验证
+2022-10-26 17:50:10.069 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索栏
+2022-10-26 17:50:10.491 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索栏
+2022-10-26 17:50:17.376 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 写入搜索内容: 健康信息每日打卡
+2022-10-26 17:50:18.298 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 写入搜索内容: 健康信息每日打卡
+2022-10-26 17:50:18.801 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 执行搜索
+2022-10-26 17:50:20.697 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 执行搜索
+2022-10-26 17:50:22.159 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索到的第一个
+2022-10-26 17:50:24.007 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索到的第一个
+2022-10-26 17:50:44.516 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 没有下次不再显示直接进入打卡页面
+2022-10-26 17:50:44.520 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 金陵科技学院网上服务大厅
+2022-10-26 17:50:44.526 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击新增按钮
+2022-10-26 17:50:45.406 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 没有下次不再显示直接进入打卡页面
+2022-10-26 17:50:45.408 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 金陵科技学院网上服务大厅
+2022-10-26 17:50:45.418 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击新增按钮
+2022-10-26 17:50:47.945 [Thread-161] "  " INFO  com.lincoco.xiaokarobot.taskhandler.RobotTask - java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:21055
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'bogon', ip: 'fe80:0:0:0:c5d:5bb9:4f7:c21a%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.5', java.version: '1.8.0_352'
+Driver info: driver.version: RemoteWebDriver
+2022-10-26 17:50:47.946 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 2022-10-26 17-50-47 用户 2012011092 开始执行自动打卡程序
+2022-10-26 17:50:47.946 [Thread-160] "  " INFO  com.lincoco.xiaokarobot.taskhandler.RobotTask - java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:43642
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'bogon', ip: 'fe80:0:0:0:c5d:5bb9:4f7:c21a%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.5', java.version: '1.8.0_352'
+Driver info: driver.version: RemoteWebDriver
+2022-10-26 17:50:49.827 [http-nio-10001-exec-1] "  " INFO  com.lincoco.xiaokarobot.taskhandler.TaskExecute - 重试开始
+2022-10-26 17:50:49.828 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 2022-10-26 17-50-49 用户 2012011084 开始执行自动打卡程序
+2022-10-26 17:50:51.792 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 金陵科技学院-统一身份认证
+2022-10-26 17:50:51.792 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始对2012011092 , 270378 进行认证
+2022-10-26 17:50:51.982 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始输入用户名密码
+2022-10-26 17:50:52.004 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户名密码成功
+2022-10-26 17:50:53.270 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 金陵科技学院-统一身份认证
+2022-10-26 17:50:53.271 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始对2012011084 , 223755 进行认证
+2022-10-26 17:50:53.317 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 尝试验证
+2022-10-26 17:50:53.459 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始输入用户名密码
+2022-10-26 17:50:53.486 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户名密码成功
+2022-10-26 17:50:54.325 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索栏
+2022-10-26 17:50:54.834 [SpringContextShutdownHook] "  " INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-10-26 17:50:54.836 [SpringContextShutdownHook] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2022-10-26 17:50:54.841 [SpringContextShutdownHook] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2022-10-26 17:52:02.195 [main] "  " INFO  com.lincoco.xiaokarobot.LinXiaokaRobotApplication - Starting LinXiaokaRobotApplication on bogon with PID 70370 (/Users/xueyeshang/Desktop/林coco团队/LinXiaokaRobot/application/target/classes started by xueyeshang in /Users/xueyeshang/Desktop/林coco团队/LinXiaokaRobot)
+2022-10-26 17:52:02.197 [main] "  " INFO  com.lincoco.xiaokarobot.LinXiaokaRobotApplication - The following profiles are active: dev
+2022-10-26 17:52:02.798 [main] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 10001 (http)
+2022-10-26 17:52:02.803 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10001"]
+2022-10-26 17:52:02.803 [main] "  " INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-10-26 17:52:02.803 [main] "  " INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-10-26 17:52:02.844 [main] "  " INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2022-10-26 17:52:02.845 [main] "  " INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 623 ms
+2022-10-26 17:52:03.182 [main] "  " INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-10-26 17:52:03.284 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-10001"]
+2022-10-26 17:52:03.297 [main] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 10001 (http) with context path '/api'
+2022-10-26 17:52:03.302 [main] "  " INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2022-10-26 17:52:03.305 [main] "  " INFO  com.lincoco.xiaokarobot.schedule.ScheduleTask - 使用CronTrigger触发器 : 0 10 0 * * ?
+2022-10-26 17:52:03.308 [main] "  " INFO  com.lincoco.xiaokarobot.LinXiaokaRobotApplication - Started LinXiaokaRobotApplication in 1.506 seconds (JVM running for 1.811)
+2022-10-26 17:52:09.343 [http-nio-10001-exec-1] "  " INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-26 17:52:09.343 [http-nio-10001-exec-1] "  " INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-10-26 17:52:09.347 [http-nio-10001-exec-1] "  " INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2022-10-26 17:52:09.394 [http-nio-10001-exec-1] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-10-26 17:52:09.617 [http-nio-10001-exec-1] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-10-26 17:52:09.669 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 2022-10-26 17-52-09 用户 2012011084 开始执行自动打卡程序
+2022-10-26 17:52:09.669 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 2022-10-26 17-52-09 用户 2012011083 开始执行自动打卡程序
+2022-10-26 17:52:11.664 [Forwarding newSession on session null to remote] "  " INFO  org.openqa.selenium.remote.ProtocolHandshake - Detected dialect: W3C
+2022-10-26 17:52:12.186 [Forwarding newSession on session null to remote] "  " INFO  org.openqa.selenium.remote.ProtocolHandshake - Detected dialect: W3C
+2022-10-26 17:52:13.864 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 金陵科技学院-统一身份认证
+2022-10-26 17:52:13.867 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始对2012011083 , 252013 进行认证
+2022-10-26 17:52:14.054 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始输入用户名密码
+2022-10-26 17:52:14.074 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户名密码成功
+2022-10-26 17:52:14.311 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 金陵科技学院-统一身份认证
+2022-10-26 17:52:14.311 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始对2012011084 , 223755 进行认证
+2022-10-26 17:52:14.518 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始输入用户名密码
+2022-10-26 17:52:14.539 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户名密码成功
+2022-10-26 17:52:15.686 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 尝试验证
+2022-10-26 17:52:16.067 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 尝试验证
+2022-10-26 17:52:16.692 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索栏
+2022-10-26 17:52:17.074 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索栏
+2022-10-26 17:52:24.136 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 写入搜索内容: 健康信息每日打卡
+2022-10-26 17:52:25.900 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 执行搜索
+2022-10-26 17:52:26.894 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 写入搜索内容: 健康信息每日打卡
+2022-10-26 17:52:28.716 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 执行搜索
+2022-10-26 17:52:29.282 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索到的第一个
+2022-10-26 17:52:32.202 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 具有下次不再显示
+2022-10-26 17:52:32.202 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 第一次进入打卡系统，要点击下次不再显示，并进入服务
+2022-10-26 17:52:32.435 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索到的第一个
+2022-10-26 17:52:32.564 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 关闭driver
+2022-10-26 17:52:32.564 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户 2012011083 执行自动打卡结束
+2022-10-26 17:52:32.565 [Thread-161] "  " INFO  com.lincoco.xiaokarobot.taskhandler.RobotTask - javascript error: Cannot read properties of null (reading 'click')
+  (Session info: chrome=106.0.5249.119)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'bogon', ip: 'fe80:0:0:0:c5d:5bb9:4f7:c21a%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.5', java.version: '1.8.0_352'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: /var/folders/md/6f7q4dws4n9...}, goog:chromeOptions: {debuggerAddress: localhost:57019}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2c2d8c9d46e49fbb55d8f3ecd115cfaa
+2022-10-26 17:52:32.566 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 2022-10-26 17-52-32 用户 2012011085 开始执行自动打卡程序
+2022-10-26 17:52:34.205 [Forwarding newSession on session null to remote] "  " INFO  org.openqa.selenium.remote.ProtocolHandshake - Detected dialect: W3C
+2022-10-26 17:52:36.246 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 金陵科技学院-统一身份认证
+2022-10-26 17:52:36.246 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始对2012011085 , 201213 进行认证
+2022-10-26 17:52:36.439 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始输入用户名密码
+2022-10-26 17:52:36.464 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户名密码成功
+2022-10-26 17:52:37.746 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 尝试验证
+2022-10-26 17:52:38.754 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索栏
+2022-10-26 17:52:43.615 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 写入搜索内容: 健康信息每日打卡
+2022-10-26 17:52:44.762 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 执行搜索
+2022-10-26 17:52:45.861 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索到的第一个
+2022-10-26 17:52:54.289 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 没有下次不再显示直接进入打卡页面
+2022-10-26 17:52:54.293 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 健康信息每日打卡
+2022-10-26 17:52:54.330 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击新增按钮
+2022-10-26 17:52:54.390 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 关闭driver
+2022-10-26 17:52:54.390 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户 2012011085 执行自动打卡结束
+2022-10-26 17:52:54.390 [Thread-161] "  " INFO  com.lincoco.xiaokarobot.taskhandler.RobotTask - element click intercepted: Element <div class="amp-hover-app-card-group amp-pull-left amp-service-center-app-group">...</div> is not clickable at point (316, 655). Other element would receive the click: <div id="ascrail2005" class="nicescroll-rails nicescroll-rails-vr" style="width: 6px; z-index: 1000; cursor: default; position: absolute; top: 20px; left: 311px; height: 627px; display: block; opacity: 1;">...</div>
+  (Session info: chrome=106.0.5249.119)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'bogon', ip: 'fe80:0:0:0:c5d:5bb9:4f7:c21a%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.5', java.version: '1.8.0_352'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: /var/folders/md/6f7q4dws4n9...}, goog:chromeOptions: {debuggerAddress: localhost:57193}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 154fb8014e27b644dae0afce3d159c19
+2022-10-26 17:52:54.391 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 2022-10-26 17-52-54 用户 2012011086 开始执行自动打卡程序
+2022-10-26 17:52:55.899 [Forwarding newSession on session null to remote] "  " INFO  org.openqa.selenium.remote.ProtocolHandshake - Detected dialect: W3C
+2022-10-26 17:52:56.764 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl -  用户 2012011084 已经成功打完卡，取消爬虫
+2022-10-26 17:52:56.880 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 关闭driver
+2022-10-26 17:52:56.880 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户 2012011084 执行自动打卡结束
+2022-10-26 17:52:56.880 [Thread-162] "  " INFO  com.lincoco.xiaokarobot.taskhandler.RobotTask - 2012011084 执行花了47秒
+2022-10-26 17:52:56.880 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 2022-10-26 17-52-56 用户 2012011092 开始执行自动打卡程序
+2022-10-26 17:52:57.933 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 金陵科技学院-统一身份认证
+2022-10-26 17:52:57.933 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始对2012011086 , 130019 进行认证
+2022-10-26 17:52:58.226 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始输入用户名密码
+2022-10-26 17:52:58.245 [Forwarding newSession on session null to remote] "  " INFO  org.openqa.selenium.remote.ProtocolHandshake - Detected dialect: W3C
+2022-10-26 17:52:58.273 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户名密码成功
+2022-10-26 17:52:59.859 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 尝试验证
+2022-10-26 17:53:00.479 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 金陵科技学院-统一身份认证
+2022-10-26 17:53:00.479 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始对2012011092 , 270378 进行认证
+2022-10-26 17:53:00.699 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始输入用户名密码
+2022-10-26 17:53:00.715 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户名密码成功
+2022-10-26 17:53:00.867 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索栏
+2022-10-26 17:53:02.119 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 尝试验证
+2022-10-26 17:53:03.127 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索栏
+2022-10-26 17:53:06.896 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 写入搜索内容: 健康信息每日打卡
+2022-10-26 17:53:08.557 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 写入搜索内容: 健康信息每日打卡
+2022-10-26 17:53:09.612 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 执行搜索
+2022-10-26 17:53:10.412 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 执行搜索
+2022-10-26 17:53:11.729 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索到的第一个
+2022-10-26 17:53:12.132 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索到的第一个
+2022-10-26 17:53:40.950 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 没有下次不再显示直接进入打卡页面
+2022-10-26 17:53:40.955 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 健康信息每日打卡
+2022-10-26 17:53:40.987 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击新增按钮
+2022-10-26 17:53:41.412 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 没有下次不再显示直接进入打卡页面
+2022-10-26 17:53:41.415 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 健康信息每日打卡
+2022-10-26 17:53:41.469 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击新增按钮
+2022-10-26 17:53:43.372 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl -  用户 2012011086 已经成功打完卡，取消爬虫
+2022-10-26 17:53:43.485 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 关闭driver
+2022-10-26 17:53:43.485 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户 2012011086 执行自动打卡结束
+2022-10-26 17:53:43.485 [Thread-161] "  " INFO  com.lincoco.xiaokarobot.taskhandler.RobotTask - 2012011086 执行花了49秒
+2022-10-26 17:53:43.881 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl -  用户 2012011092 已经成功打完卡，取消爬虫
+2022-10-26 17:53:43.988 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 关闭driver
+2022-10-26 17:53:43.988 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户 2012011092 执行自动打卡结束
+2022-10-26 17:53:43.988 [Thread-162] "  " INFO  com.lincoco.xiaokarobot.taskhandler.RobotTask - 2012011092 执行花了47秒
+2022-10-26 17:53:43.989 [http-nio-10001-exec-1] "  " INFO  com.lincoco.xiaokarobot.taskhandler.TaskExecute - 重试开始
+2022-10-26 17:53:43.989 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 2022-10-26 17-53-43 用户 2012011085 开始执行自动打卡程序
+2022-10-26 17:53:43.989 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 2022-10-26 17-53-43 用户 2012011083 开始执行自动打卡程序
+2022-10-26 17:53:45.972 [Forwarding newSession on session null to remote] "  " INFO  org.openqa.selenium.remote.ProtocolHandshake - Detected dialect: W3C
+2022-10-26 17:53:46.063 [Forwarding newSession on session null to remote] "  " INFO  org.openqa.selenium.remote.ProtocolHandshake - Detected dialect: W3C
+2022-10-26 17:53:48.090 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 金陵科技学院-统一身份认证
+2022-10-26 17:53:48.091 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始对2012011083 , 252013 进行认证
+2022-10-26 17:53:48.273 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始输入用户名密码
+2022-10-26 17:53:48.287 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户名密码成功
+2022-10-26 17:53:48.325 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 金陵科技学院-统一身份认证
+2022-10-26 17:53:48.325 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始对2012011085 , 201213 进行认证
+2022-10-26 17:53:48.504 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始输入用户名密码
+2022-10-26 17:53:48.519 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户名密码成功
+2022-10-26 17:53:49.626 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 尝试验证
+2022-10-26 17:53:49.874 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 尝试验证
+2022-10-26 17:53:50.633 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索栏
+2022-10-26 17:53:50.879 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索栏
+2022-10-26 17:53:54.222 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 写入搜索内容: 健康信息每日打卡
+2022-10-26 17:53:58.114 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 执行搜索
+2022-10-26 17:53:58.533 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 写入搜索内容: 健康信息每日打卡
+2022-10-26 17:54:00.709 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 执行搜索
+2022-10-26 17:54:00.792 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索到的第一个
+2022-10-26 17:54:02.575 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索到的第一个
+2022-10-26 17:54:09.399 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 关闭driver
+2022-10-26 17:54:09.399 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户 2012011083 执行自动打卡结束
+2022-10-26 17:54:09.399 [Thread-161] "  " INFO  com.lincoco.xiaokarobot.taskhandler.RobotTask - element click intercepted: Element <div class="amp-hover-app-card-group amp-pull-left amp-service-center-app-group">...</div> is not clickable at point (316, 655). Other element would receive the click: <div id="ascrail2005" class="nicescroll-rails nicescroll-rails-vr" style="width: 6px; z-index: 1000; cursor: default; position: absolute; top: 20px; left: 311px; height: 627px; display: block; opacity: 1;">...</div>
+  (Session info: chrome=106.0.5249.119)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'bogon', ip: 'fe80:0:0:0:c5d:5bb9:4f7:c21a%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.5', java.version: '1.8.0_352'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: /var/folders/md/6f7q4dws4n9...}, goog:chromeOptions: {debuggerAddress: localhost:57460}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 51e5318f7b535a826815dce64ca92466
+2022-10-26 17:54:10.375 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 关闭driver
+2022-10-26 17:54:10.375 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户 2012011085 执行自动打卡结束
+2022-10-26 17:54:10.375 [Thread-162] "  " INFO  com.lincoco.xiaokarobot.taskhandler.RobotTask - element click intercepted: Element <div class="amp-hover-app-card-group amp-pull-left amp-service-center-app-group">...</div> is not clickable at point (316, 655). Other element would receive the click: <div id="ascrail2005" class="nicescroll-rails nicescroll-rails-vr" style="width: 6px; z-index: 1000; cursor: default; position: absolute; top: 20px; left: 311px; height: 627px; display: block; opacity: 1;">...</div>
+  (Session info: chrome=106.0.5249.119)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'bogon', ip: 'fe80:0:0:0:c5d:5bb9:4f7:c21a%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.5', java.version: '1.8.0_352'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: /var/folders/md/6f7q4dws4n9...}, goog:chromeOptions: {debuggerAddress: localhost:57461}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: df49212ee4c88eeb90ac1ea2c906de92
+2022-10-26 17:54:10.375 [http-nio-10001-exec-1] "  " INFO  com.lincoco.xiaokarobot.taskhandler.TaskExecute - 一次重试结束，还剩2 此重试
+2022-10-26 17:54:10.375 [http-nio-10001-exec-1] "  " INFO  com.lincoco.xiaokarobot.taskhandler.TaskExecute - 重试开始
+2022-10-26 17:54:10.375 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 2022-10-26 17-54-10 用户 2012011085 开始执行自动打卡程序
+2022-10-26 17:54:10.375 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 2022-10-26 17-54-10 用户 2012011083 开始执行自动打卡程序
+2022-10-26 17:54:12.299 [Forwarding newSession on session null to remote] "  " INFO  org.openqa.selenium.remote.ProtocolHandshake - Detected dialect: W3C
+2022-10-26 17:54:12.447 [Forwarding newSession on session null to remote] "  " INFO  org.openqa.selenium.remote.ProtocolHandshake - Detected dialect: W3C
+2022-10-26 17:54:14.405 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 金陵科技学院-统一身份认证
+2022-10-26 17:54:14.405 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始对2012011083 , 252013 进行认证
+2022-10-26 17:54:14.589 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始输入用户名密码
+2022-10-26 17:54:14.606 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户名密码成功
+2022-10-26 17:54:14.620 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 金陵科技学院-统一身份认证
+2022-10-26 17:54:14.620 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始对2012011085 , 201213 进行认证
+2022-10-26 17:54:14.807 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始输入用户名密码
+2022-10-26 17:54:14.836 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户名密码成功
+2022-10-26 17:54:16.261 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 尝试验证
+2022-10-26 17:54:16.483 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 尝试验证
+2022-10-26 17:54:17.265 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索栏
+2022-10-26 17:54:17.488 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索栏
+2022-10-26 17:54:25.325 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 写入搜索内容: 健康信息每日打卡
+2022-10-26 17:54:26.830 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 写入搜索内容: 健康信息每日打卡
+2022-10-26 17:54:28.548 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 执行搜索
+2022-10-26 17:54:29.713 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 执行搜索
+2022-10-26 17:54:30.925 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索到的第一个
+2022-10-26 17:54:32.029 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索到的第一个
+2022-10-26 17:54:38.673 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 具有下次不再显示
+2022-10-26 17:54:38.674 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 第一次进入打卡系统，要点击下次不再显示，并进入服务
+2022-10-26 17:54:39.226 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 关闭driver
+2022-10-26 17:54:39.227 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户 2012011083 执行自动打卡结束
+2022-10-26 17:54:39.227 [Thread-161] "  " INFO  com.lincoco.xiaokarobot.taskhandler.RobotTask - javascript error: Cannot read properties of null (reading 'click')
+  (Session info: chrome=106.0.5249.119)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'bogon', ip: 'fe80:0:0:0:c5d:5bb9:4f7:c21a%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.5', java.version: '1.8.0_352'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: /var/folders/md/6f7q4dws4n9...}, goog:chromeOptions: {debuggerAddress: localhost:57571}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e1773f6b07b9a931aed9547703b0ae02
+2022-10-26 17:54:59.527 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 没有下次不再显示直接进入打卡页面
+2022-10-26 17:54:59.530 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 健康信息每日打卡
+2022-10-26 17:54:59.556 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击新增按钮
+2022-10-26 17:55:02.084 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl -  用户 2012011085 已经成功打完卡，取消爬虫
+2022-10-26 17:55:02.191 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 关闭driver
+2022-10-26 17:55:02.191 [Thread-162] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户 2012011085 执行自动打卡结束
+2022-10-26 17:55:02.191 [Thread-162] "  " INFO  com.lincoco.xiaokarobot.taskhandler.RobotTask - 2012011085 执行花了51秒
+2022-10-26 17:55:02.191 [http-nio-10001-exec-1] "  " INFO  com.lincoco.xiaokarobot.taskhandler.TaskExecute - 一次重试结束，还剩1 此重试
+2022-10-26 17:55:02.191 [http-nio-10001-exec-1] "  " INFO  com.lincoco.xiaokarobot.taskhandler.TaskExecute - 重试开始
+2022-10-26 17:55:02.192 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 2022-10-26 17-55-02 用户 2012011083 开始执行自动打卡程序
+2022-10-26 17:55:04.833 [Forwarding newSession on session null to remote] "  " INFO  org.openqa.selenium.remote.ProtocolHandshake - Detected dialect: W3C
+2022-10-26 17:55:06.780 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 金陵科技学院-统一身份认证
+2022-10-26 17:55:06.780 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始对2012011083 , 252013 进行认证
+2022-10-26 17:55:06.953 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始输入用户名密码
+2022-10-26 17:55:06.966 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户名密码成功
+2022-10-26 17:55:08.224 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 尝试验证
+2022-10-26 17:55:09.230 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索栏
+2022-10-26 17:55:14.550 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 写入搜索内容: 健康信息每日打卡
+2022-10-26 17:55:16.731 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 执行搜索
+2022-10-26 17:55:17.777 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索到的第一个
+2022-10-26 17:55:24.385 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 关闭driver
+2022-10-26 17:55:24.385 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户 2012011083 执行自动打卡结束
+2022-10-26 17:55:24.385 [Thread-161] "  " INFO  com.lincoco.xiaokarobot.taskhandler.RobotTask - element click intercepted: Element <div class="amp-hover-app-card-group amp-pull-left amp-service-center-app-group">...</div> is not clickable at point (316, 655). Other element would receive the click: <div id="ascrail2005" class="nicescroll-rails nicescroll-rails-vr" style="width: 6px; z-index: 1000; cursor: default; position: absolute; top: 20px; left: 311px; height: 627px; display: block; opacity: 1;">...</div>
+  (Session info: chrome=106.0.5249.119)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'bogon', ip: 'fe80:0:0:0:c5d:5bb9:4f7:c21a%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.5', java.version: '1.8.0_352'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: /var/folders/md/6f7q4dws4n9...}, goog:chromeOptions: {debuggerAddress: localhost:57731}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 268f5c4683fe476fc136210d8c8d22ac
+2022-10-26 17:55:24.386 [http-nio-10001-exec-1] "  " INFO  com.lincoco.xiaokarobot.taskhandler.TaskExecute - 一次重试结束，还剩0 此重试
+2022-10-26 17:55:24.415 [http-nio-10001-exec-1] "  " INFO  com.lincoco.xiaokarobot.taskhandler.TaskExecute - 一共有：1 个, 分别是[ 2012011083
+2022-10-26 17:55:25.600 [http-nio-10001-exec-1] "  " INFO  com.lincoco.xiaokarobot.mailsender.RobotMailSender - 【附件邮件】成功发送！to=2879322503@qq.com
+2022-10-26 17:57:08.703 [SpringContextShutdownHook] "  " INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-10-26 17:57:08.704 [SpringContextShutdownHook] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2022-10-26 17:57:08.708 [SpringContextShutdownHook] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2022-10-26 17:57:11.940 [main] "  " INFO  com.lincoco.xiaokarobot.LinXiaokaRobotApplication - Starting LinXiaokaRobotApplication on bogon with PID 70827 (/Users/xueyeshang/Desktop/林coco团队/LinXiaokaRobot/application/target/classes started by xueyeshang in /Users/xueyeshang/Desktop/林coco团队/LinXiaokaRobot)
+2022-10-26 17:57:11.942 [main] "  " INFO  com.lincoco.xiaokarobot.LinXiaokaRobotApplication - The following profiles are active: dev
+2022-10-26 17:57:12.552 [main] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 10001 (http)
+2022-10-26 17:57:12.558 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10001"]
+2022-10-26 17:57:12.558 [main] "  " INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-10-26 17:57:12.558 [main] "  " INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-10-26 17:57:12.598 [main] "  " INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2022-10-26 17:57:12.599 [main] "  " INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 628 ms
+2022-10-26 17:57:12.936 [main] "  " INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-10-26 17:57:13.037 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-10001"]
+2022-10-26 17:57:13.051 [main] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 10001 (http) with context path '/api'
+2022-10-26 17:57:13.056 [main] "  " INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2022-10-26 17:57:13.059 [main] "  " INFO  com.lincoco.xiaokarobot.schedule.ScheduleTask - 使用CronTrigger触发器 : 0 10 0 * * ?
+2022-10-26 17:57:13.061 [main] "  " INFO  com.lincoco.xiaokarobot.LinXiaokaRobotApplication - Started LinXiaokaRobotApplication in 1.492 seconds (JVM running for 1.814)
+2022-10-26 17:57:21.943 [http-nio-10001-exec-1] "  " INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-26 17:57:21.943 [http-nio-10001-exec-1] "  " INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-10-26 17:57:21.947 [http-nio-10001-exec-1] "  " INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2022-10-26 17:57:21.994 [http-nio-10001-exec-1] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-10-26 17:57:22.218 [http-nio-10001-exec-1] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-10-26 17:57:22.271 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 2022-10-26 17-57-22 用户 2012011084 开始执行自动打卡程序
+2022-10-26 17:57:22.271 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 2022-10-26 17-57-22 用户 2012011083 开始执行自动打卡程序
+2022-10-26 17:57:24.201 [Forwarding newSession on session null to remote] "  " INFO  org.openqa.selenium.remote.ProtocolHandshake - Detected dialect: W3C
+2022-10-26 17:57:24.465 [Forwarding newSession on session null to remote] "  " INFO  org.openqa.selenium.remote.ProtocolHandshake - Detected dialect: W3C
+2022-10-26 17:57:26.493 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 金陵科技学院-统一身份认证
+2022-10-26 17:57:26.496 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始对2012011084 , 223755 进行认证
+2022-10-26 17:57:26.552 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 金陵科技学院-统一身份认证
+2022-10-26 17:57:26.552 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始对2012011083 , 252013 进行认证
+2022-10-26 17:57:26.694 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始输入用户名密码
+2022-10-26 17:57:26.715 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户名密码成功
+2022-10-26 17:57:26.748 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始输入用户名密码
+2022-10-26 17:57:26.771 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户名密码成功
+2022-10-26 17:57:28.367 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 尝试验证
+2022-10-26 17:57:28.398 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 尝试验证
+2022-10-26 17:57:29.374 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索栏
+2022-10-26 17:57:29.403 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索栏
+2022-10-26 17:57:35.264 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 写入搜索内容: 健康信息每日打卡
+2022-10-26 17:57:35.729 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 写入搜索内容: 健康信息每日打卡
+2022-10-26 17:57:37.548 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 执行搜索
+2022-10-26 17:57:37.552 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 执行搜索
+2022-10-26 17:57:39.232 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索到的第一个
+2022-10-26 17:57:39.320 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索到的第一个
+2022-10-26 17:57:44.744 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 具有下次不再显示
+2022-10-26 17:57:44.744 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 第一次进入打卡系统，要点击下次不再显示，并进入服务
+2022-10-26 17:57:45.113 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 金陵科技学院网上服务大厅
+2022-10-26 17:57:45.147 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击新增按钮
+2022-10-26 17:57:53.117 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl -  用户 2012011083 已经成功打完卡，取消爬虫
+2022-10-26 17:57:53.225 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 关闭driver
+2022-10-26 17:57:53.226 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户 2012011083 执行自动打卡结束
+2022-10-26 17:57:53.226 [Thread-160] "  " INFO  com.lincoco.xiaokarobot.taskhandler.RobotTask - 2012011083 执行花了30秒
+2022-10-26 17:57:53.226 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 2022-10-26 17-57-53 用户 2012011085 开始执行自动打卡程序
+2022-10-26 17:57:54.712 [Forwarding newSession on session null to remote] "  " INFO  org.openqa.selenium.remote.ProtocolHandshake - Detected dialect: W3C
+2022-10-26 17:57:56.731 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 金陵科技学院-统一身份认证
+2022-10-26 17:57:56.731 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始对2012011085 , 201213 进行认证
+2022-10-26 17:57:56.920 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始输入用户名密码
+2022-10-26 17:57:56.943 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户名密码成功
+2022-10-26 17:57:58.309 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 尝试验证
+2022-10-26 17:57:59.314 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索栏
+2022-10-26 17:58:03.178 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 写入搜索内容: 健康信息每日打卡
+2022-10-26 17:58:04.189 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 没有下次不再显示直接进入打卡页面
+2022-10-26 17:58:04.191 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 健康信息每日打卡
+2022-10-26 17:58:04.216 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击新增按钮
+2022-10-26 17:58:05.688 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 执行搜索
+2022-10-26 17:58:06.648 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl -  用户 2012011084 已经成功打完卡，取消爬虫
+2022-10-26 17:58:06.769 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 关闭driver
+2022-10-26 17:58:06.769 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户 2012011084 执行自动打卡结束
+2022-10-26 17:58:06.769 [Thread-161] "  " INFO  com.lincoco.xiaokarobot.taskhandler.RobotTask - 2012011084 执行花了44秒
+2022-10-26 17:58:06.769 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 2022-10-26 17-58-06 用户 2012011086 开始执行自动打卡程序
+2022-10-26 17:58:07.595 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索到的第一个
+2022-10-26 17:58:08.264 [Forwarding newSession on session null to remote] "  " INFO  org.openqa.selenium.remote.ProtocolHandshake - Detected dialect: W3C
+2022-10-26 17:58:10.289 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 金陵科技学院-统一身份认证
+2022-10-26 17:58:10.289 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始对2012011086 , 130019 进行认证
+2022-10-26 17:58:10.485 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始输入用户名密码
+2022-10-26 17:58:10.508 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户名密码成功
+2022-10-26 17:58:12.020 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 尝试验证
+2022-10-26 17:58:13.026 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索栏
+2022-10-26 17:58:18.559 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 写入搜索内容: 健康信息每日打卡
+2022-10-26 17:58:19.775 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 执行搜索
+2022-10-26 17:58:21.449 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索到的第一个
+2022-10-26 17:58:31.314 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 没有下次不再显示直接进入打卡页面
+2022-10-26 17:58:31.318 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 健康信息每日打卡
+2022-10-26 17:58:31.357 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击新增按钮
+2022-10-26 17:58:33.780 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl -  用户 2012011085 已经成功打完卡，取消爬虫
+2022-10-26 17:58:33.893 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 关闭driver
+2022-10-26 17:58:33.893 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户 2012011085 执行自动打卡结束
+2022-10-26 17:58:33.893 [Thread-160] "  " INFO  com.lincoco.xiaokarobot.taskhandler.RobotTask - 2012011085 执行花了40秒
+2022-10-26 17:58:33.893 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 2022-10-26 17-58-33 用户 2012011092 开始执行自动打卡程序
+2022-10-26 17:58:36.535 [Forwarding newSession on session null to remote] "  " INFO  org.openqa.selenium.remote.ProtocolHandshake - Detected dialect: W3C
+2022-10-26 17:58:38.534 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 金陵科技学院-统一身份认证
+2022-10-26 17:58:38.534 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始对2012011092 , 270378 进行认证
+2022-10-26 17:58:38.717 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 开始输入用户名密码
+2022-10-26 17:58:38.735 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户名密码成功
+2022-10-26 17:58:40.052 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 尝试验证
+2022-10-26 17:58:41.059 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索栏
+2022-10-26 17:58:44.173 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 没有下次不再显示直接进入打卡页面
+2022-10-26 17:58:44.175 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 健康信息每日打卡
+2022-10-26 17:58:44.208 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击新增按钮
+2022-10-26 17:58:46.656 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl -  用户 2012011086 已经成功打完卡，取消爬虫
+2022-10-26 17:58:46.776 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 关闭driver
+2022-10-26 17:58:46.776 [Thread-161] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户 2012011086 执行自动打卡结束
+2022-10-26 17:58:46.776 [Thread-161] "  " INFO  com.lincoco.xiaokarobot.taskhandler.RobotTask - 2012011086 执行花了40秒
+2022-10-26 17:58:46.994 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 写入搜索内容: 健康信息每日打卡
+2022-10-26 17:58:48.160 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 执行搜索
+2022-10-26 17:58:50.760 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击搜索到的第一个
+2022-10-26 17:59:12.405 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 没有下次不再显示直接进入打卡页面
+2022-10-26 17:59:12.408 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 健康信息每日打卡
+2022-10-26 17:59:12.426 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 点击新增按钮
+2022-10-26 17:59:14.822 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl -  用户 2012011092 已经成功打完卡，取消爬虫
+2022-10-26 17:59:14.935 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 关闭driver
+2022-10-26 17:59:14.935 [Thread-160] "  " INFO  c.l.x.d.service.impl.JinKeJSDriverServiceImpl - 用户 2012011092 执行自动打卡结束
+2022-10-26 17:59:14.935 [Thread-160] "  " INFO  com.lincoco.xiaokarobot.taskhandler.RobotTask - 2012011092 执行花了41秒
+2022-10-26 17:59:14.963 [http-nio-10001-exec-1] "  " INFO  com.lincoco.xiaokarobot.taskhandler.TaskExecute - 一共 5 任务 全部成功！
+2022-10-26 17:59:16.033 [http-nio-10001-exec-1] "  " INFO  com.lincoco.xiaokarobot.mailsender.RobotMailSender - 【附件邮件】成功发送！to=2879322503@qq.com
