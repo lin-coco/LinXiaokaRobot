@@ -23,8 +23,8 @@ public class LinXiaokaRobotApplication {
         //设置浏览器驱动
 //        System.setProperty("webdriver.edge.driver","./edgedriver_linux64/msedgedriver");
 //        System.setProperty("webdriver.edge.driver","./edgedriver_mac64/msedgedriver");
-//        System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");
-        System.setProperty("webdriver.chrome.driver","chromedriver_mac64");
+        System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");
+//        System.setProperty("webdriver.chrome.driver","chromedriver_mac64");
 
     }
 

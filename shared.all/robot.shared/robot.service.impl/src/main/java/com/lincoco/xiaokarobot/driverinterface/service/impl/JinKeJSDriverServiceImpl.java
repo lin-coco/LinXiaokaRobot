@@ -39,10 +39,10 @@ public class JinKeJSDriverServiceImpl implements DriverService {
         log.info(formatStartTime + " 用户 " + identity.getId() + " 开始执行自动打卡程序");
 
         ChromeOptions options = new ChromeOptions();
-//        options.setHeadless(Boolean.TRUE);
-//        options.addArguments("--no-sandbox");
-//        options.addArguments("--disable-gpu");
-//        options.addArguments("--disable-dev-shm-usage");
+        options.setHeadless(Boolean.TRUE);
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-gpu");
+        options.addArguments("--disable-dev-shm-usage");
 
         ChromeDriver driver = new ChromeDriver(options);
         JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
