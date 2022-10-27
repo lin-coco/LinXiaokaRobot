@@ -623,3 +623,6 @@ Session ID: 268f5c4683fe476fc136210d8c8d22ac
 2022-10-26 17:59:14.935 [Thread-160] "  " INFO  com.lincoco.xiaokarobot.taskhandler.RobotTask - 2012011092 执行花了41秒
 2022-10-26 17:59:14.963 [http-nio-10001-exec-1] "  " INFO  com.lincoco.xiaokarobot.taskhandler.TaskExecute - 一共 5 任务 全部成功！
 2022-10-26 17:59:16.033 [http-nio-10001-exec-1] "  " INFO  com.lincoco.xiaokarobot.mailsender.RobotMailSender - 【附件邮件】成功发送！to=2879322503@qq.com
+2022-10-26 18:21:42.523 [SpringContextShutdownHook] "  " INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-10-26 18:21:42.524 [SpringContextShutdownHook] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2022-10-26 18:21:42.530 [SpringContextShutdownHook] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

@@ -10,13 +10,13 @@
     <parent>
         <artifactId>lin-xiaoka-robot</artifactId>
         <groupId>com.lincoco.xiaokarobot</groupId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>2.10.27</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>shared.all</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>2.10.27</version>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>

@@ -64,7 +64,7 @@ public class JinKeJSDriverServiceImpl implements DriverService {
             wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@type='submit']")));
             WebElement inputUsername = driver.findElement(By.xpath("//input[@name='username']"));
             WebElement inputPassword = driver.findElement(By.xpath("//input[@name='password']"));
-            WebElement submit = driver.findElement(By.xpath("//input[@type='submit']"));
+//            WebElement submit = driver.findElement(By.xpath("//input[@type='submit']"));
 //            Thread.sleep(2000);
             log.info("开始输入用户名密码");
 //            inputUsername.sendKeys(identity.getId());
@@ -73,10 +73,10 @@ public class JinKeJSDriverServiceImpl implements DriverService {
 //            log.info(body);
 //            String str = (String) jsExecutor.executeScript("document.querySelector(\"input[name=username]\")");
 //            log.info(str);
-            jsExecutor.executeScript("document.querySelector(\"input[name=username]\").setAttribute('value',"+identity.getId()+")");
-            jsExecutor.executeScript("document.querySelector(\"input[name=password]\").setAttribute('value',"+identity.getPassword()+")");
+            jsExecutor.executeScript("document.querySelector(\"input[name=username]\").setAttribute('value',"+"'"+identity.getId()+"'"+")");
+            jsExecutor.executeScript("document.querySelector(\"input[name=password]\").setAttribute('value',"+"'"+identity.getPassword()+"'"+")");
 
-            log.info("用户名密码成功");
+            log.info("用户名密码填写成功");
 //            Thread.sleep(2000);
 //            submit.click();
             jsExecutor.executeScript("document.querySelector(\"input[type=submit]\").click()");
@@ -148,7 +148,7 @@ public class JinKeJSDriverServiceImpl implements DriverService {
                 log.info("第一次进入打卡系统，要点击下次不再显示，并进入服务");
                 WebElement next = driver.findElement(By.xpath("//div[@class='amp-checkbox ']/label"));
 //                next.click();
-                jsExecutor.executeScript("document.querySelector(\"div.amp-checkbox\").click()");
+                jsExecutor.executeScript("document.querySelector(\"div.amp-checkbox label\").click()");
                 Thread.sleep(200);
                 WebElement enter = driver.findElement(By.xpath("//div[@id='ampDetailEnter']"));
 //                enter.click();
