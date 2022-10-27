@@ -1,17 +1,15 @@
 spring:
   datasource:
-    url: jdbc:mysql://rm-uf6e4xr978w748b9w7o.mysql.rds.aliyuncs.com:3306/xiaoka_robot?useSSL=false&serverTimezone=GMT%2b8&characterEncoding=UTF8&allowPublicKeyRetrieval=true
-    username: "xys"
-    password: "232020ctt@"
+    url: jdbc:mysql://localhost:3306/xiaoka_robot?useSSL=false&serverTimezone=GMT%2b8&characterEncoding=UTF8&allowPublicKeyRetrieval=true
+    username: root
+    password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
   mail:
     protocol: smtp
     host: smtp.qq.com
     port: 587
-    #username: 2879322503@qq.com
-    #password: gkemyvdhkfoudgij
-    username: 2199386146@qq.com
-    password: vlwtxgyxpkdgdjaa
+    username: ***
+    password: ***
     test-connection: false
     properties:
       mail:
