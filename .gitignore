@@ -1,6 +1,6 @@
 HELP.md
 target/
-application-prod.yml
+**/application-prod.yml
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**
 !**/src/test/**

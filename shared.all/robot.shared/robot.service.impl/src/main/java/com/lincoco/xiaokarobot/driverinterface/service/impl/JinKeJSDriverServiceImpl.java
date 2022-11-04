@@ -52,10 +52,11 @@ public class JinKeJSDriverServiceImpl implements DriverService {
 //        Proxy proxy = new Proxy().setHttpProxy(proxyServer).setSslProxy(proxyServer);
 //        options.setProxy(proxy);
 
-//        options.setHeadless(Boolean.TRUE);
-//        options.addArguments("--no-sandbox");
-//        options.addArguments("--disable-gpu");
-//        options.addArguments("--disable-dev-shm-usage");
+        //Linux 环境下的配置
+        options.setHeadless(Boolean.TRUE);
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-gpu");
+        options.addArguments("--disable-dev-shm-usage");
 
         ChromeDriver driver = new ChromeDriver(options);
         JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
