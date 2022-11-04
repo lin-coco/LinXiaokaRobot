@@ -61,6 +61,8 @@ public class TaskExecute {
 
         ThreadPoolExecutor executor = threadPoolCreater();
         List<RobotTask> tasks = getTasks();
+//        List<RobotTask> tasks = getTasksById("2012011084");
+
         int taskSize = tasks.size();
         //初始化计数器
         TaskCounter.resetCounter(tasks.size());
@@ -139,6 +141,19 @@ public class TaskExecute {
         List<RobotTask> robotTasks = new ArrayList<>(userIdentities.size());
         for (UserIdentity identity : userIdentities) {
             if ("金陵科技学院".equals(identity.getSchool())){
+                RobotTask robotTask = robotTaskConfiguration.jkTask(jinKeJSDriverServiceImpl);
+                robotTask.setUserIdentity(identity);
+                robotTasks.add(robotTask);
+            }
+        }
+        return robotTasks;
+    }
+
+    public List<RobotTask> getTasksById(String id){
+        List<UserIdentity> userIdentities = collectTask.collectTask();
+        List<RobotTask> robotTasks = new ArrayList<>(userIdentities.size());
+        for (UserIdentity identity : userIdentities) {
+            if ("金陵科技学院".equals(identity.getSchool()) && id.equals(identity.getId())){
                 RobotTask robotTask = robotTaskConfiguration.jkTask(jinKeJSDriverServiceImpl);
                 robotTask.setUserIdentity(identity);
                 robotTasks.add(robotTask);

@@ -39,10 +39,23 @@ public class JinKeJSDriverServiceImpl implements DriverService {
         log.info(formatStartTime + " 用户 " + identity.getId() + " 开始执行自动打卡程序");
 
         ChromeOptions options = new ChromeOptions();
-        options.setHeadless(Boolean.TRUE);
-        options.addArguments("--no-sandbox");
-        options.addArguments("--disable-gpu");
-        options.addArguments("--disable-dev-shm-usage");
+//        String proxyServer = "58.20.184.187:9091";
+//        223.96.90.216:8085 √
+//        183.236.232.160:8080
+//        188.131.233.175:8118
+//        218.252.244.104:80
+//        223.82.60.202:8060
+//        223.96.90.216:8085 √
+//        39.108.101.55:1080 √
+//        58.20.184.187:9091
+
+//        Proxy proxy = new Proxy().setHttpProxy(proxyServer).setSslProxy(proxyServer);
+//        options.setProxy(proxy);
+
+//        options.setHeadless(Boolean.TRUE);
+//        options.addArguments("--no-sandbox");
+//        options.addArguments("--disable-gpu");
+//        options.addArguments("--disable-dev-shm-usage");
 
         ChromeDriver driver = new ChromeDriver(options);
         JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;

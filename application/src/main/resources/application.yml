@@ -1,7 +1,7 @@
 spring:
   # 激活环境配置
   profiles:
-    active: prod
+    active: dev
 
 
 server:
